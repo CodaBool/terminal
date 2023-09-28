@@ -1,0 +1,2 @@
+v0
+- stable minimal features complete. Will require Patreon creator access from Foundry and the module can be published
