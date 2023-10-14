@@ -1,0 +1,34 @@
+{
+  "id": "terminal",
+  "title": "Terminal",
+  "version": "1.0.0",
+  "url": "https://github.com/CodaBool/terminal",
+  "bugs": "https://github.com/CodaBool/terminal/issues",
+  "changelog": "https://github.com/CodaBool/terminal/blob/main/changelog.txt",
+  "manifest": "https://foundryvtt.s3.us-west-2.amazonaws.com/modules/terminal/module.json",
+  "description": "A customizable interactive terminal from which players can read and reveal journal entries",
+  "authors": [{
+    "name": "CodaBool",
+    "discord": "codabool",
+    "email": "codabool@pm.me",
+    "url": "https://codabool.com"
+  }],
+  "styles": [
+    "styles/main.css",
+    "styles/external/color.css" 
+  ],
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11",
+    "maxium": "11"
+  },
+  "esmodules": [
+    "scripts/hooks.js",
+    "scripts/ui.js",
+    "scripts/util.js", 
+    "scripts/external/canvas.js", 
+    "scripts/external/color.js", 
+    "scripts/external/picker.js"
+  ],
+  "socket": true
+}

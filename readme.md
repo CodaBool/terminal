@@ -10,3 +10,5 @@ This is the public facing repo which reflects changes to a private repo. I use t
 
 # 🔑 Access
 > I am currently in the process of becoming a Patreon creator with Foundry. Until that happens the module will not be available for download.
+
+Until then you can follow me on [Patreon](https://www.patreon.com/CodaBool) for updates.
