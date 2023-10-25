@@ -26,13 +26,10 @@ jobs:
             fi
           done < changelog.txt
 
-          echo "$changelog_lines"
+          echo "$changelog_lines" > latest.txt
           echo "version=$(cat module.json | jq -r .version)" >> $GITHUB_ENV
-          #echo "changes="$changelog_lines"" >> $GITHUB_ENV
-
-          printf "changes=%s\n" "$changelog_lines" >> $GITHUB_ENV
-      # - uses: softprops/action-gh-release@v1
-      #   with:
-      #     body: v${{ env.changes }}
-      #     tag_name: v${{ env.version }}
-      #     files: module.json
+      - uses: softprops/action-gh-release@v1
+        with:
+          body_path: latest.txt
+          tag_name: v${{ env.version }}
+          files: module.json
