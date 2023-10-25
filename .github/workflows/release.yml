@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: get version
+      - name: get version and changes
         run: |
           inside_section=false
           changelog_lines=""
@@ -25,10 +25,12 @@ jobs:
               changelog_lines="$changelog_lines$line"$'\n'
             fi
           done < changelog.txt
+
+          echo "$changelog_lines"
           echo "version=$(cat module.json | jq -r .version)" >> $GITHUB_ENV
-          echo "changes=$changelog_lines" >> $GITHUB_ENV
-      - uses: softprops/action-gh-release@v1
-        with:
-          body: v${{ env.changes }}
-          tag_name: v${{ env.version }}
-          files: module.json
+          echo "changes=\"$changelog_lines\"" >> $GITHUB_ENV
+      # - uses: softprops/action-gh-release@v1
+      #   with:
+      #     body: v${{ env.changes }}
+      #     tag_name: v${{ env.version }}
+      #     files: module.json
