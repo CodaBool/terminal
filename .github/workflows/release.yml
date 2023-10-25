@@ -19,7 +19,6 @@ jobs:
           body_path: changelog.txt
           tag_name: v${{ env.version }}
           files: module.json
-          #token: ${{ secrets.TOKEN }}
 
       # - uses: ncipollo/release-action@v1
       #   with:
