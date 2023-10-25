@@ -1,9 +1,6 @@
 # 🖥️ Terminal
 
-[![Static Badge](https://img.shields.io/badge/Itch.io-CodaBool-red?style=flat-square&logo=itchdotio)](https://codabool.itch.io) [![Static Badge](https://img.shields.io/badge/Patreon-CodaBool-orange?style=flat-square&logo=patreon)](https://www.patreon.com/CodaBool) [![Static Badge](https://img.shields.io/badge/Discord-CodaBool-blue?style=flat-square&logo=discord)](https://discord.gg/foundryvtt) [![Static Badge](https://img.shields.io/badge/Foundry%20Verfied%20Version-11-brightgreen?style=flat-square&logo=checkmarx)](https://github.com/CodaBool/terminal/issues)
-
-
-
+[![Static Badge](https://img.shields.io/badge/Itch.io-CodaBool-red?style=flat-square&logo=itchdotio)](https://codabool.itch.io) [![Static Badge](https://img.shields.io/badge/Discord-CodaBool-blue?style=flat-square&logo=discord)](https://discord.gg/foundryvtt) [![Static Badge](https://img.shields.io/badge/Foundry%20Verfied%20Version-11-brightgreen?style=flat-square&logo=checkmarx)](https://github.com/CodaBool/terminal/issues)
 
 ![Preview Video](https://raw.githubusercontent.com/CodaBool/terminal/main/img/preview.gif)
 
