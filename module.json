@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "url": "https://github.com/CodaBool/terminal",
   "bugs": "https://github.com/CodaBool/terminal/issues",
-  "changelog": "https://raw.githubusercontent.com/CodaBool/terminal/main/changelog.md",
+  "changelog": "https://github.com/CodaBool/terminal/blob/main/changelog.md",
   "manifest": "https://raw.githubusercontent.com/CodaBool/terminal/main/module.json",
   "description": "A customizable interactive terminal from which players can read and reveal journal entries",
   "authors": [{
