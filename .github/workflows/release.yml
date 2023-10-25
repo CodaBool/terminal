@@ -11,22 +11,21 @@ jobs:
       - uses: actions/checkout@v3
       - name: get version and changes
         run: |
-          changelog_sections=""
+          changelog_contents=""
           inside_section=false
           while IFS= read -r line; do
-            if [[ $line == "==="* ]]; then
+            if [[ $line == "# Version "* ]]; then
               if [ "$inside_section" = false ]; then
                 inside_section=true
-                section_header="$line"
               else
                 break
               fi
             fi
-            if [ "$inside_section" = true ] && [[ $line != "==="* ]]; then
-              changelog_sections="$changelog_sections$line"$'\n'
+            if [ "$inside_section" = true ] && [[ $line != "# Version"* ]]; then
+              changelog_contents="$changelog_contents$line"$'\n'
             fi
           done < changelog.md
-          echo "$changelog_sections" > latest.md
+          echo "$changelog_contents" > latest.md
           echo "version=$(cat module.json | jq -r .version)" >> $GITHUB_ENV
       - uses: softprops/action-gh-release@v1
         with:
