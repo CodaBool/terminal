@@ -1,0 +1,33 @@
+permissions:
+  contents: write
+on:
+  push:
+    branchs:
+      - main
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: get version
+        run: echo "version=$(cat module.json | jq -r .version)" >> $GITHUB_ENV
+      - uses: softprops/action-gh-release@v1
+        # if: startsWith(github.ref, 'refs/tags/')
+        with:
+          #body: Text communicating notable changes in this release
+          #body: Text communicating notable changes in this release
+          body_path: changelog.txt
+          tag_name: v${{ env.version }}
+          files: module.json
+          #token: ${{ secrets.TOKEN }}
+
+      # - uses: ncipollo/release-action@v1
+      #   with:
+      #     artifacts: module.json
+      #     bodyFile: changelog.txt
+      #     name: v${{ env.version }}
+      #     makeLatest: true
+      #     skipIfReleaseExists: true
+      #     token: ${{ secrets.TOKEN }}
+      #     artifactContentType: zip
+      #     artifactErrorsFailBuild: true
