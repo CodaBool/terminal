@@ -15,4 +15,4 @@ while IFS= read -r line; do
   fi
 done < changelog.txt
 
-echo "changes=\"$changelog_lines\""
+printf "changes=%s\n" "$changelog_lines"
