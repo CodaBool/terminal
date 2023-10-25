@@ -10,10 +10,6 @@
 
 ===============================1.0.0===============================
 
-# 🌱 pre-release
+# 🌱 placeholder
 
-> stay tuned
-
-# 🧪 video test
-
-![Preview Video](https://raw.githubusercontent.com/CodaBool/terminal/main/img/preview.gif)
+> stay tuned, you can follow on [itcho.io](https://codabool.itch.io) for updates
