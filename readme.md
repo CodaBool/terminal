@@ -11,9 +11,9 @@ This is the public facing repo which reflects changes to a private repo. I use t
 
 1. Once published, this will have a Usage section. Detailing how to use the module.
 2. Track [issues](https://github.com/CodaBool/terminal/issues)
-3. Keep a [changelog](https://raw.githubusercontent.com/CodaBool/terminal/main/changelog.txt) of features
+3. Keep a [changelog](https://github.com/CodaBool/terminal/blob/main/changelog.md) of features
 
 # 🔑 Access
-> I am currently in the process of becoming a Patreon creator with Foundry. Until that happens the module will not be available for download.
+> I am currently in the process of becoming a premium content creator with Foundry. Until that happens the module will not be available for download.
 
-Until then you can follow me on [Patreon](https://www.patreon.com/CodaBool) for updates.
+Until then you can follow me on [Itch.io](https://codabool.itch.io) for updates.
