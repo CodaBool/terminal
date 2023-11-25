@@ -14,7 +14,7 @@
     "url": "https://codabool.com"
   }],
   "styles": [
-    "styles/main.css"
+    "global.css"
   ],
   "compatibility": {
     "minimum": "11",
