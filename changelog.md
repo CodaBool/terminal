@@ -12,6 +12,6 @@
 </pre>
 # Version 1.0.0
 
-## 🌱 placeholder
+## 🌱 First release! 
 
-> stay tuned, you can follow on [itcho.io](https://codabool.itch.io) for updates
+> Checkout the storefront at [codabool.itch.io/terminal](https://codabool.itch.io/terminal)!
