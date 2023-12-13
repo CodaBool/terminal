@@ -32,11 +32,6 @@ You can purchase a key to permanently tie to your Foundry accout at [codabool.it
 ### 🎨 Customize
 You can change the color and ASCII art of the terminal. Go to your Game Settings and filter to Termainal. You can set the colors and splash art.
 
-### 🐜 Incompatibility
-This module version 1 will not be compatible with the theripper93's [levels](https://foundryvtt.com/packages/levels) module. Which is a very popular way to add multi-floor layouts to a scene. With this in mind do not place a terminal tile anywhere which is walkable from below it or above it. Because there is no checking on height in this module.
-
-I will implement checking for this in a version 2 release.
-
 ### 🎈 Stretch Goals
 Will be making a priority for stability for the first couple patches. However, once those are through there are some additional features I want to add:
 
