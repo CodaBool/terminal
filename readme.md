@@ -19,24 +19,22 @@ Here find the following:
 You can purchase a key to permanently tie to your Foundry accout at [codabool.itch.io/terminal](https://codabool.itch.io/terminal)
 
 # 🔨 Usage
-1. Complete the Access section for how to tie the module to your Foundry account.
-2. In your Foundry server instance go to the setup screen and view the "Add-on Modules" tab. Click "Install Module" and type into the search "terminal". You should see a package called Terminal by CodaBool, click "Install".
+1. Complete the Access section. Ensuring to tie the key to your [Foundry account](https://foundryvtt.com/me/purchases).
+2. In your Foundry server before launching a world go to the setup screen and view the "Add-on Modules" tab. Click "Install Module" and type into the search "terminal". You should see a package called Terminal by CodaBool, click "Install".
 3. Now go into a game world you have created. Go to settings > Manage Modules, enable the terminal module
 4. Place a tile and click "Create Tile"
 5. Double click your created tile to see the tile's settings
-6. Click the new tab called Terminal
+6. Click on the new tab called Terminal
 6. Enable the Terminal by clicking the Enable checkbox and then click the "Assign Journal" button
 7. Select a journal from your list of journals
 8. Move onto the tile with any token
 
 ### 🎨 Customize
-You can change the color and ASCII art of the terminal. Go to your Game Settings and filter to Termainal. You can set the colors and splash art.
+You can change the color and ASCII art of the terminal. Go to your Game Settings and filter to Terminal. You can set the colors and splash art.
 
 ### 🎈 Stretch Goals
 Will be making a priority for stability for the first couple patches. However, once those are through there are some additional features I want to add:
 
 - sound effects (disk spinup, ambient computer noises. Customizable)
 - preset styles to match with popular game systems like Star Wars or Cyberpunk
-- ways to interact with doors
-- ways to optionally incorporate rolls
-- hacking / puzzle minigame
+- hacking / puzzle minigames
