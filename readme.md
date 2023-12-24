@@ -38,3 +38,5 @@ Will be making a priority for stability for the first couple patches. However, o
 - sound effects (disk spinup, ambient computer noises. Customizable)
 - preset styles to match with popular game systems like Star Wars or Cyberpunk
 - hacking / puzzle minigames
+- controls for ships / vehicle
+- reveal map
