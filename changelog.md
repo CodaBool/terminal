@@ -12,24 +12,29 @@
 </pre>
 # Version 1.2.0
 
-## Features
-- ⚡ Performance mode respected for the skill check UI. The number of points will scale with the mode (e.g. high = more points).
-- 🎨 Multiple styles! You can now create styles and each Terminal can have their own. Meaning there is no more global style. 
-  - There was a lot of code changes that had to be made to make this happen. But it sets the module down the correct path and paves the way for some pretty sweet updates in the future.
-- 🕵️ Validation when saving Terminal settings. Catches errors as early as possible.
-  - Validation check on style
-  - Validation check on Door ID
-  - Validation check on exit and enter macro
-  - Validation check on journal
-- Will gracefully handle several misconfiguration cases now
+## ✨ Features
+- 🎨 Huge addition of customizable styles
+- 🖼️ background for terminal, can use either an image or video
+- 🖌️ default styles (fallout, alien, star wars, cyberpunk, blade runner, two generics)
+  - included 16 audio files for style quick starting
+  - included 5 backgrounds
+- 🔊 terminal can now play audio files
+- 🗺️ can enable a button to reveal map (applies to all whole party)
+- 🔇 link to abmient volume
+- ☢️ add Fallout terminal unlock success line
+- make screensaver optional
+- make screensaver respect the client's performance mode
+  - screensaver runs in a minimal mode on Linux Firefox since it has bad performance there
+- new style form
+- add preview of modal when closing terminal as GM
+- large validation coverage when saving tile settings
 
-## Bugs squashed
-- Macros will no longer run if the Terminal is disabled.
-- Will give proper error messages when a journal has not been assigned
+## 🐛 Bugs squashed
+- logic to catch journal undefined errors
 
 # Version 1.1.0
 
-## Features
+## ✨ Features
 - 🛗 support for `levels` module!
 - ✅ now can restrict access for skill checks! (not full sys. integrated skill checks)
 - 🔓 can unlock doors from the terminal!
@@ -38,7 +43,7 @@
 - will give notification for user when a door is unlocked or a skill check is passed. Uses specific lines for popular game sys. (e.g. Star Wars game system says "pure pazaak", Red: "preem work", Blade Runner: "faster than any skin job could", Alien: "maybe it isn't game over") 💪🤝💪🏿
 - now will give a notice of what players see when closing a terminal as a GM
 
-## Bugs squashed
+## 🐛 Bugs squashed
 - terminal tile setting would sometimes be nested breaking the injected HTML
 - terminal showed content for all pages irrespective of their permission
 - tile settings would try and save to db when no journals exist
