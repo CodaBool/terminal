@@ -33,9 +33,6 @@ You can purchase a key to permanently tie to your Foundry accout at [codabool.it
 You can change the color and ASCII art of the terminal. Go to your Game Settings and filter to Terminal. You can set the colors and splash art.
 
 ### 🎈 Stretch Goals
-Will be making a priority for stability for the first couple patches. However, once those are through there are some additional features I want to add:
-
-- add styling layouts to pick from
 - add style presets for some other common game systems (e.g. starfinder, lancer, warhammer, mothership)
 - hacking / puzzle minigame
 - add way to integrate with a spaceship. (e.g. starmap, system controls)
