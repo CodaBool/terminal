@@ -11,6 +11,10 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀
 </pre>
 
+# Version 1.3.2
+- hotfix for bugs introduced with 1.3.1
+- form validation completely failed to interact with the form fix I brought in 1.3.1
+
 # Version 1.3.1
 > Deprecation: I am deprecating the entry and exit macros and fully removing them in release version 2.0.0. See [here for more info](https://github.com/CodaBool/terminal/issues/3).
 
