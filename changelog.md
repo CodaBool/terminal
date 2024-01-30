@@ -10,6 +10,20 @@
 ⠀⠀⠀⠀⠀⠀⠀⠶⡿⠤⠚⠁⠀⠀⠀⢀⣠⡤⢺⣥⠟⢡⠃⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀
 </pre>
+
+# Version 1.3.1
+> Deprecation: I am deprecating the entry and exit macros and fully removing them in release version 2.0.0. See [here for more info](https://github.com/CodaBool/terminal/issues/3).
+
+### Features
+- 🧑‍🤝‍🧑 support multiple GMs
+  - I've known that there would be bugs surrounding multiple GMs. So, I finally gave a full look over.
+  - generally a random GM is chosen and will have them used as the proxy to authenticate any API call
+  - has better error handling for if no GM is connected
+- Form better clarifies who runs macros
+
+### Bugs squashed
+- fixed a form issue with the Tile settings from the known issues in last version
+
 # Version 1.3.0
 > major code changes 6 files changed, 508 line insertions(+), 130 line deletions(-)
 > from my testing all features (excluding macro args) working Foundry V10-V11 verified
@@ -45,6 +59,8 @@
 
 ## known issues
 - I am aware of an issue where if the terminal is not enabled but a macro or a unlock door setting is changed it will collapse and disable the terminal. This is annoying and I will fix this in a 1.3.1 release. The code change isn't as simple as I would hope and I already have a lot (hundreds) included in this version, so I'm pushing it down further down.
+- I realized it's not clear who runs macros and what permissions should be set. I will update the text hints for that in the next update as well
+  - for now you can know that entry and exit macros run by whichever user walks on or exits. While the new Run Macro setting always runs on the GM side to unlock all APIs.
 
 ## 🐛 Bugs squashed
 - tile config validation error notifications would happen on non-GM users
