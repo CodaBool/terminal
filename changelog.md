@@ -11,6 +11,9 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀
 </pre>
 
+# Version 1.3.3
+- add an experimental way to run Terminal through Macros
+
 # Version 1.3.2
 - hotfix for bugs introduced with 1.3.1
 - form validation completely failed to interact with the form fix I brought in 1.3.1
