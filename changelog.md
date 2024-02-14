@@ -10,6 +10,23 @@
 ⠀⠀⠀⠀⠀⠀⠀⠶⡿⠤⠚⠁⠀⠀⠀⢀⣠⡤⢺⣥⠟⢡⠃⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀
 </pre>
+# Version 1.3.4
+### Features
+- Allow for Terminals to be opened through macros
+  - included two macros in a compendium, one for opening a Terminal for 1 user, another for opening for all. I do recommend using the included macro and not the one I posted in an Itch.io comment since the compendium macro has lots of nice validation and error handling
+  - this can be used with the Monk's Active Tiles module to allow for more use cases outside of token movement based opening
+- fix issue of the close button not being visable when an error occured with a Terminal
+- major internal code changes, switched over to using a Handlebars render template instead of just a large html string
+- give a warning when deleting a style that is in use in the current scene
+- better error messages when a tile is misconfigured
+
+### Bugs squashed
+- some validation which was causing bugs and was removed is now fixed and brought back in
+- wasn't performing a check on if a Terminal is already open in some cases. That's been fixed
+- rolled back accordian functionality and other of tile settings changes. The form changes brought in 1.3.0 are not up to standards. Best to keep things simple here.
+- will now check if a permission change needs to occur right before instead of right when the Terminal opens. This would have occurred if multiple people had the Terminal open and someone updated the default ownership before another closed the Terminal.
+  - this allowed me to remove the need to provide the journal permission up front
+
 
 # Version 1.3.3
 - add an experimental way to run Terminal through Macros

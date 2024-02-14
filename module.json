@@ -1,7 +1,7 @@
 {
   "id": "terminal",
   "title": "Terminal",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "url": "https://github.com/CodaBool/terminal",
   "bugs": "https://github.com/CodaBool/terminal/issues",
   "changelog": "https://github.com/CodaBool/terminal/blob/main/changelog.md",
@@ -16,6 +16,13 @@
   "styles": [
     "global.css"
   ],
+  "packs": [{
+    "name": "terminal-macros",
+    "label": "Terminal Macros",
+    "path": "packs/terminal-macros.db",
+    "type": "Macro",
+    "private": false
+  }],
   "compatibility": {
     "minimum": "10",
     "verified": "11",
