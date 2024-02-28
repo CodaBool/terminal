@@ -10,6 +10,10 @@
 ⠀⠀⠀⠀⠀⠀⠀⠶⡿⠤⠚⠁⠀⠀⠀⢀⣠⡤⢺⣥⠟⢡⠃⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀
 </pre>
+# Version 1.3.6
+### Bugs squashed
+- fixed issue of macros buttons not executing if triggered as a GM
+
 # Version 1.3.5
 ### Bugs squashed
 - a couple quick tile form hot fixes, form changes should all apply immediately and not require a "save" button press.
