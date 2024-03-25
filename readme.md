@@ -7,7 +7,7 @@
 > Foundry module to create interactive terminals with custom content and theming
 
 # 🗺️ Welcome
-Here find the following:
+Here you'll find the following:
 
 - A [Usage](https://github.com/CodaBool/terminal#-usage) section. Detailing how to use the module.
 - Track [issues](https://github.com/CodaBool/terminal/issues)
