@@ -32,8 +32,13 @@ You can purchase a key to permanently tie to your Foundry accout at [codabool.it
 ### 🎨 Customize
 You can change the color and ASCII art of the terminal. Go to your Game Settings and filter to Terminal. You can set the colors and splash art.
 
+### ❤️ Compatibility
+The module has integration with Levels and Monk's Active Tiles
+
 ### 🎈 Stretch Goals
-- add style presets for some other common game systems (e.g. starfinder, lancer, warhammer, mothership)
-- hacking / puzzle minigame
 - add way to integrate with a spaceship. (e.g. starmap, system controls)
-- allow for relocking door
+- Integrate with Cyberpunk RED rules
+- include a control dashboard where it can be locked down, wiped or given fake data
+- customize splash screen
+- more visual effects, such as filters and text animations
+- hacking / puzzle minigame
