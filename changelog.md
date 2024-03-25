@@ -10,6 +10,69 @@
 ⠀⠀⠀⠀⠀⠀⠀⠶⡿⠤⠚⠁⠀⠀⠀⢀⣠⡤⢺⣥⠟⢡⠃⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀
 </pre>
+# Version 2.0.0
+> major code changes 508 line insertions(+), 130 line deletions(-)
+> from my testing all features (excluding macro args) working Foundry V10-V11 verified
+
+
+## 🎯 Game System Specific
+> For this update I read through the rules on several game systems.
+> I found that these game systems make up the majority of Sci-Fi on Foundry:
+> Starfinder, Cyberpunk RED, Star Wars FFG, Lancer, Alien RPG, Shadowrun, Warhammer: WG
+> I purchased the PDFs or modules associated with blade runner, warhammer IM, warhammer WG, cyberpunk, starfinder, lancer, shadowrun, fallout, star wars FFG.
+> This helped me design the feature to look into what items a user has and restrict access. As well as a feature specific to Starfinder and Alien.
+> In the future I could do further integrations. Top of the priority list right now is Cyberpunk RED.
+> They have a distinct rules around how a Terminal should be accessed. I hope to have a targeted update for them sometime this year. 
+
+## ✨ Features
+- support PDFs
+- fully integrate with Monk's Active Tiles, allowing for the triggers tabs to be ran from the Terminal UI.
+- allow doors to be relocked
+- can require password for terminal entry
+- can require an item for terminal entry
+- feedback button on tile config, which allows you to quickly report bugs
+- Turn power on or off (really just uses the scene darkness)
+- can observe tokens, this can simulate camera or turret access or anything you can think of
+- can limit token observeration to a set time in seconds
+- can detect motion for the scene
+- can use a skill check for observe button
+- can use a skill check for map button
+- can use a skill check for specific page(s), which can simulate file encryption
+- can use a skill check for power
+- can use a skill check for detect motion
+- can use a skill check for door lock altering
+- can access other computers
+- page decryption changes the ownership of that page
+- compendium macros updated to reflect new changes
+- Alien RPG now has a charge items button
+- Starfinder now can enter their computer tier
+- added a notification system to tell you if newer versions of Terminal macros are available
+- added 8 new forms of validation on tile settings
+- ssh, item, and actor selectors use click listeners like Monk module. To make selecting IDs easy.
+- add new Skill Check UI for easily picking when skill checks happen
+- add a success line for Starfinder
+
+## 🚨 Deprecated
+> migrate to the macro button or use Monk's Active Tiles to regain these lost features
+
+- removed entry macro
+- removed exit macro
+
+## 🐛 Bugs squashed
+- audio volume was not being respected, it will pull dynamically now. Does not require reopening whatever window to pull new volume setting
+- image captions would be displayed even when "undefined". Meaning you would often see "undefined" as a caption
+- new styles would not be immediately available in the style dropdown until reopening the tile config if the tile config was open
+- clicking yes reveal as a GM would actually try to reveal, despite telling you it doesn't try that
+- prevent html inject. Significant rework on how content gets injected into the terminal main content box.
+- will pull journal content on click, if changes are made to the journal they can be reflected without closing and reopening
+- will only change journal permissions when it needs to. Used to prematurely change ownership in several areas
+- validation added for existing feature. Will check that fog exploration + token vision is on for the scene when Map Button is checked
+- use `foundry.utils.mergeObject` since old method is deprecated
+- do a check on if a journal exists before trying to open Terminal
+
+## bugs discovered
+- ambient audio doesn't respect volume changes
+
 # Version 1.3.6
 ### Bugs squashed
 - fixed issue of macros buttons not executing if triggered as a GM
