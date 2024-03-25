@@ -22,7 +22,7 @@
 > I purchased the PDFs or modules associated with blade runner, warhammer IM, warhammer WG, cyberpunk, starfinder, lancer, shadowrun, fallout, star wars FFG.
 > This helped me design the feature to look into what items a user has and restrict access. As well as a feature specific to Starfinder and Alien.
 > In the future I could do further integrations. Top of the priority list right now is Cyberpunk RED.
-> They have a distinct rules around how a Terminal should be accessed. I hope to have a targeted update for them sometime this year. 
+> They have a distinct rules around how a Terminal should be accessed. I hope to have a targeted update for Cyberpunk RED sometime this year. 
 
 ## ✨ Features
 - support PDFs
@@ -72,6 +72,7 @@
 
 ## bugs discovered
 - ambient audio doesn't respect volume changes
+- monk's active tile triggers will only do the first action
 
 # Version 1.3.6
 ### Bugs squashed
