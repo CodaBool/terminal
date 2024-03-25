@@ -30,7 +30,9 @@ You can purchase a key to permanently tie to your Foundry accout at [codabool.it
 8. Move onto the tile with any token
 
 ### 🎨 Customize
-You can change the color and ASCII art of the terminal. Go to your Game Settings and filter to Terminal. You can set the colors and splash art.
+Several aspects of the terminal can be customized. You can set the background to any image or video. You can define your own ASCII for the splash screen. You can define the colors for most things. You can set your own border image for the window. 
+
+Audio effects can also be customized. Specific files can be used for clicks, login, logout and as an ambient noise.
 
 ### ❤️ Compatibility
 The module has integration with Levels and Monk's Active Tiles
