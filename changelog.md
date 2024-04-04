@@ -22,9 +22,14 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.0.1
+## 🐛 Bugs squashed
+- there was a bizarre javascript bug that I still don't fully understand. It would seem that there is a race condition or document.querySelector is not working the way I understand it to. Regardless I have ported that selection over to jquery and it seems to always fix the bug. If the issue comes up again I will do further research but for now I'm just happy to resolve this issue that seemed to only show up when using a non-image background style. Game systems like Alien, or Fallout should see their Terminals working again.
+- monk's active tile triggers seems to trigger all actions and not just the first one, like I was experiencing at one point
+
 # Version 2.0.0
-> major code changes 508 line insertions(+), 130 line deletions(-)
-> from my testing all features (excluding macro args) working Foundry V10-V11 verified
+> major code changes 1987 additions(+) and 549 deletions(-)
+> from my testing all features working Foundry V10-V11 verified
 
 
 ## 🎯 Game System Specific
@@ -32,20 +37,20 @@
 > I found that these game systems make up the majority of Sci-Fi on Foundry:
 > Starfinder, Cyberpunk RED, Star Wars FFG, Lancer, Alien RPG, Shadowrun, Warhammer: WG
 > I purchased the PDFs or modules associated with blade runner, warhammer IM, warhammer WG, cyberpunk, starfinder, lancer, shadowrun, fallout, star wars FFG.
-> This helped me design the feature to look into what items a user has and restrict access. As well as a feature specific to Starfinder and Alien.
+> This helped me design features which work generally. As well as targeted a feature specific to Starfinder and Alien.
 > In the future I could do further integrations. Top of the priority list right now is Cyberpunk RED.
 > They have a distinct rules around how a Terminal should be accessed. I hope to have a targeted update for Cyberpunk RED sometime this year. 
 
 ## ✨ Features
 - support PDFs
 - fully integrate with Monk's Active Tiles, allowing for the triggers tabs to be ran from the Terminal UI.
-- allow doors to be relocked
+- allow doors to be re-locked
 - can require password for terminal entry
 - can require an item for terminal entry
 - feedback button on tile config, which allows you to quickly report bugs
 - Turn power on or off (really just uses the scene darkness)
 - can observe tokens, this can simulate camera or turret access or anything you can think of
-- can limit token observeration to a set time in seconds
+- can limit token observation to a set time in seconds
 - can detect motion for the scene
 - can use a skill check for observe button
 - can use a skill check for map button
@@ -65,7 +70,7 @@
 - add a success line for Starfinder
 
 ## 🚨 Deprecated
-> migrate to the macro button or use Monk's Active Tiles to regain these lost features
+> migrate to the "macro button" or use Monk's Active Tiles to regain these lost features
 
 - removed entry macro
 - removed exit macro
@@ -85,6 +90,7 @@
 ## bugs discovered
 - ambient audio doesn't respect volume changes
 - monk's active tile triggers will only do the first action
+- Some tiles appear to be always breaking. The problem is inconsistent and the only solution is to recreate the tile until more information can be found (solved in 2.0.1)
 
 # Version 1.3.6
 ### Bugs squashed
