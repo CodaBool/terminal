@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.0.2
+## ✨ Features
+- allow for "open for specific user" macro to be dynamic and just be ran by triggering player when paired with Monk's Active Tile
+
 # Version 2.0.1
 ## 🐛 Bugs squashed
 - there was a bizarre javascript bug that I still don't fully understand. It would seem that there is a race condition or document.querySelector is not working the way I understand it to. Regardless I have ported that selection over to jquery and it seems to always fix the bug. If the issue comes up again I will do further research but for now I'm just happy to resolve this issue that seemed to only show up when using a non-image background style. Game systems like Alien, or Fallout should see their Terminals working again.
