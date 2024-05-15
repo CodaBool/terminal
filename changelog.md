@@ -22,6 +22,26 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.1.1
+## Hotfix
+- Secure Shell was having issues selecting elements with the last update. I noticed that changing those elements to classes instead of ids fixed the issue. Another bizarre JavaScript bug on the books. I get that ids are supposed to be unique but it worked 1 month ago. So, not sure what changed. This could cause other bugs to crop up. So another hotfix may be in the cards.
+
+## known issues
+- in 2.1.0 I added a feature to have the camera pan to a random token for detect motion. If there is a skill check on this feature. Then the pings are ran GM side. This means that the pans happen GM side. Which is not intended. I'll have a fix for that in next update.
+
+## Upcoming
+> these are all subject to change
+
+- don't allow multiple of the same timer to run
+- main character mode (one person uses Terminal and all others watch their actions)
+- add option to have the macro button only run once
+- range based detect motion for Cyberpunk
+- validation against global illumination for Starfinder
+- buy and check compatibility with theripper's puzzle module
+- allow for users to add a splash / video for the loading screen
+- look into an integration with Lancer
+- revisit permission reset / local Terminal only mode
+
 # Version 2.1.0
 ## ✨ Features
 - all skill checks are more clear about what is going on behind the scenes. Players will now see a "permission denied". With the option to do a skilled action. Which then transitions to a loading icon. While the GM approves or denies. Then they either get a new permission denied screen. Or then get the success screen. This vastly improves the player experience when it comes to skill checks.
