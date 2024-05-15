@@ -22,6 +22,18 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.1.0
+## ✨ Features
+- all skill checks are more clear about what is going on behind the scenes. Players will now see a "permission denied". With the option to do a skilled action. Which then transitions to a loading icon. While the GM approves or denies. Then they either get a new permission denied screen. Or then get the success screen. This vastly improves the player experience when it comes to skill checks.
+- detect motion will now pan to a random non-dead non-hidden token in the scene. To help the player understand that there is new info on the scene
+- add a quick style button, which will change the tile image if approved
+- updated text in several spots for the tile config. To match with all the new features. For example the alter doors featured has new text since doors can now be more than just unlocked.
+
+## 🐛 Bugs squashed
+- fix bug where selected a button in Terminal did not trigger the normal CSS changes
+- both included (compendium) macros were broken, they had a "ID is undefined" error. This has been fixed. If you have a V2 macro delete them and import the V3 macro. The module will give you a notification if it sees you have a out of date macro version
+- added another validation when opening a Terminal, if the tile ID is for a Terminal not in the scene. You used to see "a style is not attached". This does not speak to the root issue. A new validation is done first checking if the tile can even be found in the scene first. This was common to run into when using the compendium macro to open a Terminal. Since it could be done from any scene. Despite not having that Terminal in the scene.
+
 # Version 2.0.2
 ## ✨ Features
 - allow for "open for specific user" macro to be dynamic and just be ran by triggering player when paired with Monk's Active Tile
