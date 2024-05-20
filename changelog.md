@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.2.0
+## Hotfix
+- There was a MAJOR issue for The Forge users. It was mentioned 3 months ago once but a recent bug report brought it up again. I investigated it and this module was nearly unusable on The Forge. Whoever, has been playing on The Forge, I'm sorry it took me 3 months to catch this issue. I'll test on that platform before major releases in the future to make sure it doesn't happen again. Thanks to whoever submitted the report yesterday
+
 # Version 2.1.1
 ## Hotfix
 - Secure Shell was having issues selecting elements with the last update. I noticed that changing those elements to classes instead of ids fixed the issue. Another bizarre JavaScript bug on the books. I get that ids are supposed to be unique but it worked 1 month ago. So, not sure what changed. This could cause other bugs to crop up. So another hotfix may be in the cards.
