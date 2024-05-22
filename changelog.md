@@ -22,6 +22,18 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.2.1
+## compatibility
+- ensured all features were working for Foundry v12.320. There were a couple features which weren't working but now they are.
+- set the max core version for the module to 12. So, whenever they end up releasing it people can install the module day 1.
+
+## Bugfix
+- ownership wasn't being reset correctly for observe token
+
+## Future compatibility
+- I found a terminal adjacent module out there called `console`. It doesn't seem like it would cause any conflicts with how Terminal works. But I should test it out more.
+- I also want to ensure support premium `puzzle-locks` module
+
 # Version 2.2.0
 ## Hotfix
 - There was a MAJOR issue for The Forge users. It was mentioned 3 months ago once but a recent bug report brought it up again. I investigated it and this module was nearly unusable on The Forge. Whoever, has been playing on The Forge, I'm sorry it took me 3 months to catch this issue. I'll test on that platform before major releases in the future to make sure it doesn't happen again. Thanks to whoever submitted the report yesterday
