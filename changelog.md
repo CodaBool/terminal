@@ -22,6 +22,13 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.3.0
+- Use ApplicationV2 & DialogV2 in most places that's possible (only spot missing it is GM approve dialog). You will only see this new UI if using Foundry v12+
+- Terminal compendium macros can now read new UUID format of Foundry v12
+
+## Bugfix
+- will now do a check if the tile and token are on the same elevation
+
 # Version 2.2.1
 ## compatibility
 - ensured all features were working for Foundry v12.320. There were a couple features which weren't working but now they are.
