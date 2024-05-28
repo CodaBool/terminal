@@ -22,6 +22,44 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.4.0
+- Complete rewrite of how collision with a Terminal tile is determined.
+- A significant rewrite in how listeners are attached to buttons and inputs in the tile config. It should be much more reliable without losing your configuration at times. This does mean you will have a dialog popup when editing text inputs but should be a net benefit to user experience.
+- moved the beta settings out of beta, they have been stable for long enough
+
+## Bugfix
+- dragging a token over and past a Terminal will no longer open it up. It will notify you that you walked past one but will no longer open. This used to be exploitable since you could then walk with the Terminal still open around the scene.
+- all tile config changes immediately save. There is no longer the issue that some field's data would get wiped away when configuring some other field.
+
+## Upcoming
+- The last 2 updates have been a lot of behind the scenes changes. I can hopefully focus on some of the items on my todo list. Here is a copy of that:
+
+> all subject to change
+```
+- revisit permission reset / local Terminal only mode
+- research compatibility puzzle & console module
+- give way to control if observe token is just for individual or everyone
+- Observe Tokens has bugs
+- create GitHub Wiki
+- validation on Global Illumination, it conflicts with some features (i.e. starfinder has this on by default)
+- don’t allow multiple of the same JavaScript timers to run (rewalking on Terminal is one)
+- main character mode (one person uses Terminal and all others watch their actions)
+- add option to have the macro button only run once
+- range based detect motion for Cyberpunk RED
+- allow for users to add a splash / video for the loading screen
+- integrate with Net Elevators
+- ability for GM to activate a Lockdown, this stops users from using a Terminal and displays a timer
+- more visual effects (filters, text animation)
+- have the V12 implementation of share map be shareable for entire party
+- research an LLM API to help write journals / templates
+- Darkness, should add checkbox for this region only (would need to scope down. i.e. only in current region, and would just toggle existing behavior)
+- ASCII preview looks different than how it does in Terminal
+- allow option to preload data for places like The Forge (images, audio, video)
+- use a border image by default for newly created styles
+- research an integration with Lancer
+- BUG: GM should get notification on if the alter door was an unlock or lock action, when ran as a GM
+- BUG: walking off too fast keeps Terminal open
+```
 # Version 2.3.0
 - Use ApplicationV2 & DialogV2 in most places that's possible (only spot missing it is GM approve dialog). You will only see this new UI if using Foundry v12+
 - Terminal compendium macros can now read new UUID format of Foundry v12
