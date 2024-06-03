@@ -19,15 +19,10 @@ Here you'll find the following:
 You can purchase a key to permanently tie to your Foundry accout at [codabool.itch.io/terminal](https://codabool.itch.io/terminal)
 
 # 🔨 Usage
-1. Complete the Access section for how to tie the module to your Foundry account.
-2. In your Foundry server instance go to the setup screen and view the "Add-on Modules" tab. Click "Install Module" and type into the search "terminal". You should see a package called Terminal by CodaBool, click "Install".
-3. Now go into a game world you have created. Go to settings > Manage Modules, enable the terminal module
-4. Place a tile and click "Create Tile"
-5. Double click your created tile to see the tile's settings
-6. Click the new tab called Terminal
-6. Enable the Terminal by clicking the Enable checkbox and then click the "Assign Journal" button
-7. Select a journal from your list of journals
-8. Move onto the tile with any token
+1. Create a new tile
+2. Open the new tile's config by double clicking on it. There will be a new tab called `Terminal`
+3. Assign a `journal` to the Terminal and click the `enable` checkbox. There is no need to change the ownership, Terminal will handle permissions for you.
+4. Move onto the tile with any token
 
 ### 🎨 Customize
 Several aspects of the terminal can be customized. You can set the background to any image or video. You can define your own ASCII for the splash screen. You can define the colors for most things. You can set your own border image for the window.
@@ -35,7 +30,9 @@ Several aspects of the terminal can be customized. You can set the background to
 Audio effects can also be customized. Specific files can be used for clicks, login, logout and as an ambient noise.
 
 ### ❤️ Compatibility
-The module has integration with Levels and Monk's Active Tiles
+The module has integration with Levels, Puzzle Locks, and Monk's Active Tiles.
+
+There is also Game System specific features for Starfinder and Alien
 
 ### 🎈 Stretch Goals
 - add way to integrate with a spaceship. (e.g. starmap, system controls)

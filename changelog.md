@@ -22,6 +22,13 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.4.1
+- Full support for `puzzle-locks` module, you can now have a specific page locked behind a puzzle lock or have the entire Terminal behind a puzzle lock
+- UUID links weren't being parsed like they would be with normal journals. This is now being done. So, you can easily link to other actor, journal, items inside Terminal pages
+
+## Bugfix
+- V4 Terminal macros were broken, they are working now under the new V5 name. If you have any Terminal compendium macros. Delete them and import latest.
+
 # Version 2.4.0
 - Complete rewrite of how collision with a Terminal tile is determined.
 - A significant rewrite in how listeners are attached to buttons and inputs in the tile config. It should be much more reliable without losing your configuration at times. This does mean you will have a dialog popup when editing text inputs but should be a net benefit to user experience.
