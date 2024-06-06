@@ -22,6 +22,19 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.5.0
+- the deafult style now uses a border image
+- can now set a splash video or image. If using a video, the ASCII and loading bar won't be displayed. Which effectively makes the video splash a full replacement for the standard ASCII loading screen. Warning, if using a video for both the splash and background. These files are not preloaded and you will see significant delay when your sever is not close to the client. For this reason the next update will include preload functionality which should greatly help any large network requests.
+- Detect Motion can now be limited to a specified range. This is very useful for Cyberpunk RED, which has rules that mention range based token detection.
+- There is now an option to only have the macro run once. This is useful for complex macros which you wouldn't want the players to run more than once.
+- Detect Motion and Observer Actor now have built in locks which only allow one to be running for a terminal. If the button is pressed a second time while one timer is still running, a message about that process already running will be displayed. This did introduce some risk in that if the GM reloads before the timer is removed this would permanently lock that timer with no easy way to remove it. For this reason I also implemented a safety mechanism. 15 seconds after a GM reloads Foundry it will remove all timer locks on all Terminals. 
+
+## Bugfix
+- only validate on tiles that the GM is currently on the scene for
+
+## Upcoming
+- preload files
+
 # Version 2.4.1
 - Full support for `puzzle-locks` module, you can now have a specific page locked behind a puzzle lock or have the entire Terminal behind a puzzle lock
 - UUID links weren't being parsed like they would be with normal journals. This is now being done. So, you can easily link to other actor, journal, items inside Terminal pages
