@@ -22,6 +22,14 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.5.1
+- Vast improvements for Forge performance. If you're on the Forge expect 80%+ faster asset loading.
+- New asset caching functionality. This will leverage CloudFlare edge networks caching to get asset load times down as much as possible. There is a new game setting for Terminal which enables this feature. Consider this experimental (off by default), but I'm seeing 50ms load times for even large files with this configured on. I do implement parts of the feature for The Forge by default since this is CloudFlare targeted and Forge uses CloudFlare.
+- Made audio calls asynchronous. The immediate feedback with delayed audio feels better than stalled overall feedback for things like buttons.
+
+## Bugfix
+- Fixed a unhandled error that got thrown in V12 due to a class naming conflict
+
 # Version 2.5.0
 - the deafult style now uses a border image
 - can now set a splash video or image. If using a video, the ASCII and loading bar won't be displayed. Which effectively makes the video splash a full replacement for the standard ASCII loading screen. Warning, if using a video for both the splash and background. These files are not preloaded and you will see significant delay when your sever is not close to the client. For this reason the next update will include preload functionality which should greatly help any large network requests.
