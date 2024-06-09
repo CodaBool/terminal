@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.5.2
+- hotfix Forge issue that the Terminal window would request already present JS module and stall asset rendering
+
 # Version 2.5.1
 - Vast improvements for Forge performance. If you're on the Forge expect 80%+ faster asset loading.
 - New asset caching functionality. This will leverage CloudFlare edge networks caching to get asset load times down as much as possible. There is a new game setting for Terminal which enables this feature. Consider this experimental (off by default), but I'm seeing 50ms load times for even large files with this configured on. I do implement parts of the feature for The Forge by default since this is CloudFlare targeted and Forge uses CloudFlare.
