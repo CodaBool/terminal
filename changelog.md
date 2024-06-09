@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.5.3
+- hotfix non-forge module was broken
+
 # Version 2.5.2
 - hotfix Forge issue that the Terminal window would request already present JS module and stall asset rendering
 
