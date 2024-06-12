@@ -22,6 +22,27 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 2.6.0
+
+> Terminal just got more stylish!
+
+## ✨ Features
+- Added new style option `noise` effect
+- Added new style option CRT TV `scan line` effect, this uses your Base color to tint itself. I really like how this one turned out
+- Added new style option `Decode animation` which will add a letter scrambling effect to headers 1 - 3. i.e. If you create a page with a header 1 and have this on it will animate that header when clicking on the page. An important thing to note is that it cannot contain child elementes, like spans.
+- Added new style option `Glitch` effect. This adds a 1 in 7 chance to have a warping effect on the interface of the Terminal.
+- Scripts used for animated text are preloaded if on the Forge
+- Resized and removed padding from some elements. This should just improve on the existing layout
+
+## 🐛 Bugs squashed
+- Detect Motion would not minimize and pan if it was behind a skill check
+- V12 map reveal was not working if behind a skill check
+- fixed the splash video not scaling to fit the window
+- use new foundry.audio.Sound if on V12
+- skill checks would sometimes not update their text to include a button that users could click
+- same issue with splash, it would sometimes not update correctly
+- made default color based background a tad more opaque, it was barely visible
+
 # Version 2.5.3
 - hotfix non-forge module was broken
 
