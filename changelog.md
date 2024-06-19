@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+
+# Version 2.6.1
+- hotfix, if not using new decode animation there would be a error about TextPlugin not being defined. Only affected non-Forge users
+
 # Version 2.6.0
 
 > Terminal just got more stylish!
