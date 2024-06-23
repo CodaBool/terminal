@@ -23,6 +23,10 @@
       *********************************     ()           ()
 </pre>
 
+# Version 2.6.2
+- fix an issue of the observe actor timer lock not being able to be removed, becuase it expects the GM to be on the source scene
+- added autoloop to splash screen videos
+
 # Version 2.6.1
 - hotfix, if not using new decode animation there would be a error about TextPlugin not being defined. Only affected non-Forge users
 
