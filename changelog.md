@@ -23,6 +23,14 @@
       *********************************     ()           ()
 </pre>
 
+# Version 2.6.3
+- Allow for Secure Shell button to have custom name
+
+### Development Update
+> I have been hard at work for a new module. It has a lot of overhead and is taking a lot of time but that's just what it takes to make competitive modules on Foundry. There are a lot of talented devs out there. I did end up creating a whole website for this next project, which is done as of today. The website part is FOSS and you can see it on my GitHub. 
+
+> as for the module, well I'll have more details soon. 
+
 # Version 2.6.2
 - fix an issue of the observe actor timer lock not being able to be removed, becuase it expects the GM to be on the source scene
 - added autoloop to splash screen videos
