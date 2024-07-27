@@ -23,6 +23,20 @@
       *********************************     ()           ()
 </pre>
 
+# Version 2.6.4
+### Development Update
+> I've started on a v3.0 for Terminal. This will only be supported on Foundry V12+. Going forward with that I actually won't provide any more feature updates for V10-V11 and will be working solely on V12. which actually allows me to remove a lot of old code. I had to rewrite the Terminal window fully to use Foundry's new AppV2. Doesn't necessarily add any benefits (it is certainly making debugging 100% better since I'm now given line numbers for stacktrace instead of "handlebars failed to render the template") but will be good for the longevity of the project. Foundry devs have mentioned that AppV1 will eventually go away. 
+
+> A commonly requested feature is customization of some hardcoded text, the v3.0 release will add that feature.
+
+> Additionally the v3.0 release will fully switch to using UUIDs instead of IDs. Since that is what Foundry V12 copies to your clipboard when you click on the ID now. Switching to using UUIDs is pretty interesting. This does require a rewrite for many things and I'm currently thinking will also require a migration script for users to run. Using UUID over tile ID is also the major blocker for having some features of Terminal only work on the scene of the Terminal's tile. Once I get a implementation that uses UUIDs and is stable you will be able to fully use a Terminal from another scene, and have it interact with things that are off scene! (i.e. Unlock a door that is in another scene). Many complications to solve before I want to release this though. 
+
+> as for the module, well I'll have more details soon. 
+
+- Support for `window-controls` module
+- fix a typo
+- fix a css class from being too broad
+
 # Version 2.6.3
 - Allow for Secure Shell button to have custom name
 
