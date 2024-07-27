@@ -23,6 +23,9 @@
       *********************************     ()           ()
 </pre>
 
+# Version 2.6.5
+- replace method for associating macros, journals, items and actors to Terminal. This new method injects code into existing Foundry list click listeners. This new method is especially an improvement for macros and journals. This is becuase before you could not utilize folder and search functions. Since I was building my own UI for journal and macro lists. This should make finding macros or journals in long lists much easier. This has been verified working in V11 & V12. Submit and issue if you see any issues with associating macros, journals, items and actors.
+
 # Version 2.6.4
 ### Development Update
 > I've started on a v3.0 for Terminal. This will only be supported on Foundry V12+. Going forward with that I actually won't provide any more feature updates for V10-V11 and will be working solely on V12. which actually allows me to remove a lot of old code. I had to rewrite the Terminal window fully to use Foundry's new AppV2. Doesn't necessarily add any benefits (it is certainly making debugging 100% better since I'm now given line numbers for stacktrace instead of "handlebars failed to render the template") but will be good for the longevity of the project. Foundry devs have mentioned that AppV1 will eventually go away. 
