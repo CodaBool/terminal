@@ -23,6 +23,9 @@
       *********************************     ()           ()
 </pre>
 
+# Version 2.6.7
+- use different macro directory open method for Foundry V10
+
 # Version 2.6.6
 > This likely will be the last release for Terminal in Foundry V10. Since I've begun work on Terminal version 3 which will only support Foundry 12
 
