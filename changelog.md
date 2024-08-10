@@ -23,6 +23,11 @@
       *********************************     ()           ()
 </pre>
 
+# Version 2.6.6
+> This likely will be the last release for Terminal in Foundry V10. Since I've begun work on Terminal version 3 which will only support Foundry 12
+
+- Foundry V10 hotfix. New selection method from 2.6.5 did not work on V10. Rolling back to a previous click listener method. Thank you to JJ for the bug report
+
 # Version 2.6.5
 - replace method for associating macros, journals, items and actors to Terminal. This new method injects code into existing Foundry list click listeners. This new method is especially an improvement for macros and journals. This is becuase before you could not utilize folder and search functions. Since I was building my own UI for journal and macro lists. This should make finding macros or journals in long lists much easier. This has been verified working in V11 & V12. Submit and issue if you see any issues with associating macros, journals, items and actors.
 
