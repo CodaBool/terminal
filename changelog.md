@@ -23,6 +23,22 @@
       *********************************     ()           ()
 </pre>
 
+# Version 3.0.0
+### Major Config Migration
+> A new migration script will guide users through this automated process
+
+- migrate from IDs to UUIDs for Doors and SSH
+- migrate to using a tile flag instead of a global settings config for storing style associations
+
+### ✨ Other Changes
+- migrate to ApplicationV2 fully
+  - this has the major benefit of now giving a full stacktrace and line number when an uncaught error is thrown inside the Terminal Application
+- Major code changes, 18% reduction in the size of the codebase
+- Rename feature, can now rename certain aspects of the Terminal
+- quality of life changes:
+  - can see the new state of lights or doors when altering them. This changes the ASCII art and no longer uses ui notification toasts
+  - view buttons, Doors and SSH now have view buttons. These pan and ping on the placeable for easier configuration
+
 # Version 2.6.7
 - use different macro directory open method for Foundry V10
 
