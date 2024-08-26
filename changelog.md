@@ -22,8 +22,22 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.0.1
+> still investigating a styling issue I observed on someone else's machine from a session I did. They had a 1920x1200 screen but I can't seen to replicate it with those dimensions. If anyone runs into styling issues where Terminal is unreadable please report it using the Feedback screen or Github issues tab with their screen size.
+
+## 🐛 Bugs squashed
+- several fixes for ASCII styling
+  - set the terminal content font to a more appropriate font
+  - fixed a long standing issue where the ASCII did not display the spacing correctly
+- added a script which will run on startup and update the default terminal styles if they have drifted
+- added some styling accomodations for small 720p height and below screens
+- fixed another long standing issue of the tile config having the incorrect height when opening (and shows a scrollbar)
+
+> I noticed tile config icons are not working on Blade Runner game system. This seems to be a bug with Blade Runner system. I opened a support [ticket](https://github.com/fvtt-fria-ligan/blade-runner-foundry-vtt/issues/52) to see if they are aware of it.
 
 # Version 3.0.0
+> more details can be read on the devlog [here](https://codabool.itch.io/terminal/devlog/786464/terminal-v30)
+
 ### Major Config Migration
 > A new migration script will guide users through this automated process
 
