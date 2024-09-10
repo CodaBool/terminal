@@ -22,6 +22,16 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.0
+- I explored integrating with Google Chrome's in browser LLM, Gemini Nano. To help GMs with writing journal entries. However, while the model is usable in the latest stable version of Chrome, it does have limitations (hardware and needs feature flags turned on). I'll probably check out a LLM integration feature using API keys some other time down the road.
+
+## 🗺️ Regions Integration
+- You can now trigger Region behaviors from the Terminal. A new UI button has been added to the tile config for this
+  - There are several important things to know for how to set this up. But I've listed those out in the UI, and should clear everything up
+## ✨ New Features
+- the "download map" feature now has an option to share to the whole group (which was the old behavior before Foundry V12)
+- Since Terminal 3.0.0 there is better support for cross scene usage. However, the default behavior should still be to close the Terminal when the scene changes. This is now true but there is now also a config to allow for the Terminal to <b>not</b> close when the scene changes
+
 # Version 3.0.1
 > still investigating a styling issue I observed on someone else's machine from a session I did. They had a 1920x1200 screen but I can't seen to replicate it with those dimensions. If anyone runs into styling issues where Terminal is unreadable please report it using the Feedback screen or Github issues tab with their screen size.
 
