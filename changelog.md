@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.1
+## 🐛 Bug Hotfix
+- fix issue with adding a region trigger 
+
 # Version 3.1.0
 - I explored integrating with Google Chrome's in browser LLM, Gemini Nano. To help GMs with writing journal entries. However, while the model is usable in the latest stable version of Chrome, it does have limitations (hardware and needs feature flags turned on). I'll probably check out a LLM integration feature using API keys some other time down the road.
 
