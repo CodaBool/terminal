@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.2
+## 🐛 Bug Hotfix
+- fix issue with changing a region trigger
+
 # Version 3.1.1
 ## 🐛 Bug Hotfix
 - fix issue with adding a region trigger 
