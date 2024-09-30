@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.3
+## ✨ New Features
+- teleporting a token from Region behavior is now supported
+
 # Version 3.1.2
 ## 🐛 Bug Hotfix
 - fix issue with changing a region trigger
