@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.4
+## 🐛 Bug Hotfix
+- fixed a MEJ conflict which would break all click listeners (this would have also created issues with several other modules, but MEJ is common). This was rooted in not using libwrapper when needed.
+
 # Version 3.1.3
 ## ✨ New Features
 - teleporting a token from Region behavior is now supported
