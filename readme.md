@@ -32,12 +32,9 @@ Audio effects can also be customized. Specific files can be used for clicks, log
 ### ❤️ Compatibility
 The module has integration with Levels, Puzzle Locks, and Monk's Active Tiles.
 
-There is also Game System specific features for Starfinder and Alien
+There is also a Game System specific feature for Alien (charge items with a battery)
 
 ### 🎈 Stretch Goals
-- add way to integrate with a spaceship. (e.g. starmap, system controls)
+- add way to integrate with a spaceship. (e.g. starmap)
 - Integrate with Cyberpunk RED rules
-- include a control dashboard where it can be locked down, wiped or given fake data
-- customize splash screen
-- more visual effects, such as filters and text animations
 - hacking / puzzle minigame
