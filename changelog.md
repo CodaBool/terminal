@@ -22,6 +22,15 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.5
+## 🐛 Bug Fix
+- Levels integration was broken, it seems since v11 or so there is a Levels API to use instead. Migrated to that and everything works. Thanks to anonymous for the bug report on that.
+  - this is the second time I've gotten really useful feedback from the in game feedback feature. Thank you guys for that ♥️
+
+## Upcoming
+- I have a boat load of fresh style presets that should drop this month. I will add presets for Warhammer, Lancer and new ones to Alien, Cyberpunk. As well as ones generic enough they can be used for any system.
+- Foundry devs are working on V13 and with that the tile config is being migrated to ApplicationV2. This will require some major code changes to support. I requested a prototype early but seems I'll have to wait for the public prototype. Which isn't really an issue. Last time, V12, it took several months for the prototype to become stable. Plenty of time for me to keep the migration smooth.
+
 # Version 3.1.4
 ## 🐛 Bug Hotfix
 - fixed a MEJ conflict which would break all click listeners (this would have also created issues with several other modules, but MEJ is common). This was rooted in not using libwrapper when needed.
