@@ -22,6 +22,34 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.6
+## 🤕 Breaking Change!
+- cleaned up code related to how backgrounds and splash files were shown. This does break a current pattern of behavior. Normally the background file will get used for the splash if one is not specified. Now to allow for more fine control, you must use same file in the splash field as the background field to keep the same behavior. Because by default now it will use your back color to generate a placeholder image for your splash (exactly like how it does for the background/non-splash file).
+
+## ✨ Features
+### 20 new style presets! (yes TWENTY)
+> Warhammer and Lancer now have a default style!
+
+- all 20 new styles come with their own new splash and background animations, this means 40 impressive animation files have been added to the module. These have all been optimized for web with the average file size for these animations being ~ 300kb. This means you have several easy options for designing the look and feel of your Terminal. While still keeping asset load times snappy. I'm excited to mix and match all these new animations and share them with you today. 
+
+## Other Changes
+- made scan effect occur less frequently
+- custom and preset styles are given distinct background colors in both the tile config and style editor window
+- preset styles are hidden by default in style editor window
+- custom styles always show first
+- Terminal close prompt for GM, that said "This is a copy of what players would see". Can now be set to never show
+- made terminal sidebar buttons have a wider border on the horizontal sides
+- added a new style setting, for showing the ASCII art and loading bar. This used to be determined by if the splash file was a video or image. However, this now is its own configurable setting to allow for more control. 
+- added a script that runs behind the scenes to add missing style presets on startup. As well as adding properties that do not exist yet on style presets.
+- added a new image that can be chosen for quick tile background. In addition you can now check if you want a light to be placed to help players find the Terminal. Finally you can also pick a tint for the tile image right in this same window (talk about efficient, I know I will be using it!).
+
+## Upcoming
+> This has been a very time consuming process to make all these new styles but has been something I've wanted to do for several months. Now that this and also Region support is done. I will take a look at some of these other features I wanted to look at:
+
+- a type mode, where commands can be entered by keyboard
+- attempt to make a "book" or "paper" style so that DnD/Pathfinder folk can join the fun
+- ability for GM to run a lockdown macro, this stops users from using a Terminal and displays a timer
+
 # Version 3.1.5
 ## 🐛 Bug Fix
 - Levels integration was broken, it seems since v11 or so there is a Levels API to use instead. Migrated to that and everything works. Thanks to anonymous for the bug report on that.
