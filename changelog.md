@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.8
+## Foundry V13 support
+- the prototype is here and its already supported 💪
+
 # Version 3.1.7
 ## 🐛 Bug Hotfix
 - password screen styling was broken with last update
