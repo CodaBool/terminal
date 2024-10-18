@@ -1,37 +1,32 @@
 ---
 name: Bug report
 about: Create a report to help improve this module
-title: "[BUG] - SHORT DESCRIPTION HERE"
-labels: ''
+title: "SHORT DESCRIPTION HERE"
+labels: 'bug'
 assignees: 'CodaBool'
 
 ---
+# 🚩 The Issue
+A clear and concise description of what the bug is
 
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
+### 👟 Steps to reproduce
 1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
+2. Click on '...'
+3. Scroll down to '...'
 4. See error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+### 🖥️  Setup
+- **Foundry Version** = 12
+- **Game System** = Alien
+- **Terminal Module Version** = 3.1.7
+- **Browser** = Chrome
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+#### ☑️  Does the bug still happen when only Terminal module is enabled?
+> if the bug requires another module enabled please state which module
 
-**Setup:**
- - Foundry Version: [e.g. 11]
- - Game System Version: [e.g. Alien RPG 3.6]
- - Terminal Module Version: [e.g. 1.0.0]
- - Browser & version [e.g. Google Chrome 118.0.5993.70]
+Yes / No
 
-**Active modules:**
- - Dice So Nice!
- - [insert more modules here, can click active filter and take a screenshot]
+### 🖼️  Develop Console Screenshot / Error Messages
+> open your browser's [dev console](https://balsamiq.com/support/faqs/browserconsole) (F12 > console) and reproduce the bug. Then screenshot any new logs that show up.
 
-**Additional context**
-Add any other context about the problem here.
+### 📝  Extra Context

@@ -1,8 +1,8 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: "[REQUEST] - SHORT DESCRIPTION HERE"
-labels: ''
+title: "SHORT DESCRIPTION HERE"
+labels: 'enhancement'
 assignees: 'CodaBool'
 
 ---
