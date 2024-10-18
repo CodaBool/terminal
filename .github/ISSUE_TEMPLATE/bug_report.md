@@ -9,6 +9,7 @@ assignees: 'CodaBool'
 # 🚩 The Issue
 A clear and concise description of what the bug is
 
+---
 ### 👟 Steps to reproduce
 1. Go to '...'
 2. Click on '...'
@@ -16,7 +17,7 @@ A clear and concise description of what the bug is
 4. See error
 
 ### 🖥️  Setup
-- **Foundry Version** = 12
+- **Foundry Version** = 12.331
 - **Game System** = Alien
 - **Terminal Module Version** = 3.1.7
 - **Browser** = Chrome
@@ -26,7 +27,9 @@ A clear and concise description of what the bug is
 
 Yes / No
 
-### 🖼️  Develop Console Screenshot / Error Messages
+### 🖼️  Logs Screenshot
 > open your browser's [dev console](https://balsamiq.com/support/faqs/browserconsole) (F12 > console) and reproduce the bug. Then screenshot any new logs that show up.
 
-### 📝  Extra Context
+---
+### 📝 Extra Context
+Add any additional details or screenshots here
