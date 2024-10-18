@@ -1,7 +1,7 @@
 {
   "id": "terminal",
   "title": "Terminal",
-  "version": "3.1.6",
+  "version": "3.1.7",
   "url": "https://github.com/CodaBool/terminal",
   "bugs": "https://github.com/CodaBool/terminal/issues",
   "changelog": "https://github.com/CodaBool/terminal/blob/main/changelog.md",
@@ -28,7 +28,7 @@
   "compatibility": {
     "minimum": "12",
     "verified": "12",
-    "maxium": "12"
+    "maxium": "13"
   },
   "esmodules": [
     "scripts/hooks.js",

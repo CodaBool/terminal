@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.7
+## 🐛 Bug Hotfix
+- password screen styling was broken with last update
+
 # Version 3.1.6
 ## 🤕 Breaking Change!
 - cleaned up code related to how backgrounds and splash files were shown. This does break a current pattern of behavior. Normally the background file will get used for the splash if one is not specified. Now to allow for more fine control, you must use same file in the splash field as the background field to keep the same behavior. Because by default now it will use your back color to generate a placeholder image for your splash (exactly like how it does for the background/non-splash file).
@@ -93,7 +97,7 @@
   - set the terminal content font to a more appropriate font
   - fixed a long standing issue where the ASCII did not display the spacing correctly
 - added a script which will run on startup and update the default terminal styles if they have drifted
-- added some styling accomodations for small 720p height and below screens
+- added some styling accommodations for small 720p height and below screens
 - fixed another long standing issue of the tile config having the incorrect height when opening (and shows a scrollbar)
 
 > I noticed tile config icons are not working on Blade Runner game system. This seems to be a bug with Blade Runner system. I opened a support [ticket](https://github.com/fvtt-fria-ligan/blade-runner-foundry-vtt/issues/52) to see if they are aware of it.
