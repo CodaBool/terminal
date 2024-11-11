@@ -22,12 +22,22 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.10
+## 🐛 Bug Hotfix
+- there was another issue with the Terminal from 3.1.8 that is now fixed. The tile config would wrongly inject HTML when it shouldn't and I believe on v13 it wouldn't inject when it should.
+
+## Features
+- added a way to cancel the add Regions listener
+
 # Version 3.1.9
 ## 🐛 Bug Hotfix
 - I switched to another token movement detection hook and it completely broke how Terminal should be opened. I would switch back to the old one but it would break the V13 support I wrote. So, I'll just work with this. Basically if ANYONE stepped on a Terminal all players would open the Terminal. This has been resolved. It checks for the following three items before allowing a token based opening
   - the token is owned
   - you are on the right scene
   - you have the token that did the movement selected
+
+> this does add the unintended effect that if anyone who owns a token and has them selected but is moved by another player. Then both players will have the Terminal open. I think this is will have to be the behavior going forward.
+
 - there was also a report for Skill checks not working but that might have just been related to the above bug. If you have have any issue with that report onto the already opened issue [here](https://github.com/CodaBool/terminal/issues/19)
 
 # Version 3.1.8
