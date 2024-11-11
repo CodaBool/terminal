@@ -22,6 +22,14 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.9
+## 🐛 Bug Hotfix
+- I switched to another token movement detection hook and it completely broke how Terminal should be opened. I would switch back to the old one but it would break the V13 support I wrote. So, I'll just work with this. Basically if ANYONE stepped on a Terminal all players would open the Terminal. This has been resolved. It checks for the following three items before allowing a token based opening
+  - the token is owned
+  - you are on the right scene
+  - you have the token that did the movement selected
+- there was also a report for Skill checks not working but that might have just been related to the above bug. If you have have any issue with that report onto the already opened issue [here](https://github.com/CodaBool/terminal/issues/19)
+
 # Version 3.1.8
 ## Foundry V13 support
 - the prototype is here and its already supported 💪
