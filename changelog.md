@@ -22,6 +22,11 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.11
+## 🐛 Bugfix
+- fixed an issue where the maximize & close button no longer showed in Foundry V13
+  - there is still a [reported issue](https://github.com/CodaBool/terminal/issues/20) of this happing in V12 but I haven't been able to reproduce that
+
 # Version 3.1.10
 ## 🐛 Bug Hotfix
 - there was another issue with the Terminal from 3.1.8 that is now fixed. The tile config would wrongly inject HTML when it shouldn't and I believe on v13 it wouldn't inject when it should.
