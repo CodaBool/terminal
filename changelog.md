@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.1.13
+## 🐛 Bugfix
+- Fix an issue where repeatedly walking onto a Terminal meant it would no longer play its startup audio
+
 # Version 3.1.12
 ## 🐛 Bugfix
 - Light theme had a broken header. A fix is coming soon for Pathfinder players that are using `Dorako UI` + `Doraku UX` which will automatically add `Terminal` to the exclude list. But for now you can just add it manually.
