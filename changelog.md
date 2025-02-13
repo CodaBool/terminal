@@ -22,6 +22,20 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.2.0
+## ✨ Quality of Life
+- In V13 when adding a macro to the Terminal. You can now also click on a macro in the bottom hotbar. (this is V13+ exclusive, V12 will not support this)
+
+## 😎 V13 ready
+> Foundry V13 was already supported but there were features broken
+
+- In V13 the tile quick style window was unusable. The color picker wouldn't work and submitting the form wouldn't work. These are fixed
+- In V13 adding a required item was totally broken in V13. I couldn't get my fancy function injection solution fixed. So, I've reverted to a legacy click listener which should work fine.
+
+## 🐛 Bugfix
+- Fixed bug of macro locks preventing macro use even when `Single Use Macros` was left unchecked
+- Fixed a few styling issues
+
 # Version 3.1.13
 ## 🐛 Bugfix
 - Fix an issue where repeatedly walking onto a Terminal meant it would no longer play its startup audio
