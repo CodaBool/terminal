@@ -22,6 +22,18 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.2.2
+## 🐛 Bugfix
+- There were 2 anonymous reports about issues with the map reveal. I think this will resolve the issue. It seemed if users had a token selected it would interfere with map reveals. The report had mention that browser tab focus had an impact but I haven't been able to replicate that.
+- fix notifications about "click listener canceled" when it wasn't
+
+## Minor things
+- styling improvements ensure that a scroll bar exists on Terminal tile tab in v13
+- text changes which clarify things when needed
+
+## v13 verified
+- tested for no feature breaks for the latest [v13.337 test release](https://foundryvtt.com/releases/13.337)
+
 # Version 3.2.1
 ## ✨ Feature
 - new config that allows for scene switches to happen before observe tokens.
