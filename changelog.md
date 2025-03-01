@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.2.1
+## ✨ Feature
+- new config that allows for scene switches to happen before observe tokens.
+
 # Version 3.2.0
 ## ✨ Quality of Life
 - In V13 when adding a macro to the Terminal. You can now also click on a macro in the bottom hotbar. (this is V13+ exclusive, V12 will not support this)
