@@ -22,6 +22,13 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.2.3
+## ✨ Quality of Life
+- Can add multiple Secure Shells to a single terminal now. 
+
+## 🤕 Breaking Change
+- The only breaking effect of this is that if you had a rename value for Secure Shell. It is now lost. You will need to go under the Rename Buttons UI and rewrite this value
+
 # Version 3.2.2
 ## 🐛 Bugfix
 - There were 2 anonymous reports about issues with the map reveal. I think this will resolve the issue. It seemed if users had a token selected it would interfere with map reveals. The report had mention that browser tab focus had an impact but I haven't been able to replicate that.
