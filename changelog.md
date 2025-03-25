@@ -22,188 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
-# Version 3.3.0
-## Deprecating V12
-This is early but I am finding that the last version of Terminal is stable enough. There were a few UI breaking changes that would have been time consuming to split on the two Foundry versions I was supporting. So, instead all future updates are going to be V13+ minimum. However, if a major bug crops up I'll put out a fix for V12. This unfortunately means The below features are locked behind upgrading to V13 😔
 
-> this gets said a thousand times over in the Foundry community but perform a backup of everything before upgrading to V13! Don't upgrade without giving yourself time to do a rollback if necessary.
-
-## ✨ Feature
-- New config which disables Terminal if an encounter is happening
-- Can now run a macro as the triggering players, without a GM-proxy
-
-## 😎 Code Trimmed
-- since this update doesn't support V12 anymore, I was able to remove plenty of lines of code. Which keeps the project maintainable.
-
-# Version 3.2.3
-## ✨ Quality of Life
-- Can add multiple Secure Shells to a single terminal now. 
-
-## 🤕 Breaking Change
-- The only breaking effect of this is that if you had a rename value for Secure Shell. It is now lost. You will need to go under the Rename Buttons UI and rewrite this value
-
-# Version 3.2.2
-## 🐛 Bugfix
-- There were 2 anonymous reports about issues with the map reveal. I think this will resolve the issue. It seemed if users had a token selected it would interfere with map reveals. The report had mention that browser tab focus had an impact but I haven't been able to replicate that.
-- fix notifications about "click listener canceled" when it wasn't
-
-## Minor things
-- styling improvements ensure that a scroll bar exists on Terminal tile tab in v13
-- text changes which clarify things when needed
-
-## v13 verified
-- tested for no feature breaks for the latest [v13.337 test release](https://foundryvtt.com/releases/13.337)
-
-# Version 3.2.1
-## ✨ Feature
-- new config that allows for scene switches to happen before observe tokens.
-
-# Version 3.2.0
-## ✨ Quality of Life
-- In V13 when adding a macro to the Terminal. You can now also click on a macro in the bottom hotbar. (this is V13+ exclusive, V12 will not support this)
-
-## 😎 V13 ready
-> Foundry V13 was already supported but there were features broken
-
-- In V13 the tile quick style window was unusable. The color picker wouldn't work and submitting the form wouldn't work. These are fixed
-- In V13 adding a required item was totally broken in V13. I couldn't get my fancy function injection solution fixed. So, I've reverted to a legacy click listener which should work fine.
-
-## 🐛 Bugfix
-- Fixed bug of macro locks preventing macro use even when `Single Use Macros` was left unchecked
-- Fixed a few styling issues
-
-# Version 3.1.13
-## 🐛 Bugfix
-- Fix an issue where repeatedly walking onto a Terminal meant it would no longer play its startup audio
-
-# Version 3.1.12
-## 🐛 Bugfix
-- Light theme had a broken header. A fix is coming soon for Pathfinder players that are using `Dorako UI` + `Doraku UX` which will automatically add `Terminal` to the exclude list. But for now you can just add it manually.
-
-# Version 3.1.11
-## 🐛 Bugfix
-- fixed an issue where the maximize & close button no longer showed in Foundry V13
-  - there is still a [reported issue](https://github.com/CodaBool/terminal/issues/20) of this happing in V12 but I haven't been able to reproduce that
-
-# Version 3.1.10
-## 🐛 Bug Hotfix
-- there was another issue with the Terminal from 3.1.8 that is now fixed. The tile config would wrongly inject HTML when it shouldn't and I believe on v13 it wouldn't inject when it should.
-
-## Features
-- added a way to cancel the add Regions listener
-
-# Version 3.1.9
-## 🐛 Bug Hotfix
-- I switched to another token movement detection hook and it completely broke how Terminal should be opened. I would switch back to the old one but it would break the V13 support I wrote. So, I'll just work with this. Basically if ANYONE stepped on a Terminal all players would open the Terminal. This has been resolved. It checks for the following three items before allowing a token based opening
-  - the token is owned
-  - you are on the right scene
-  - you have the token that did the movement selected
-
-> this does add the unintended effect that if anyone who owns a token and has them selected but is moved by another player. Then both players will have the Terminal open. I think this is will have to be the behavior going forward.
-
-- there was also a report for Skill checks not working but that might have just been related to the above bug. If you have have any issue with that report onto the already opened issue [here](https://github.com/CodaBool/terminal/issues/19)
-
-# Version 3.1.8
-## Foundry V13 support
-- the prototype is here and its already supported 💪
-
-# Version 3.1.7
-## 🐛 Bug Hotfix
-- password screen styling was broken with last update
-
-# Version 3.1.6
-## 🤕 Breaking Change!
-- cleaned up code related to how backgrounds and splash files were shown. This does break a current pattern of behavior. Normally the background file will get used for the splash if one is not specified. Now to allow for more fine control, you must use same file in the splash field as the background field to keep the same behavior. Because by default now it will use your back color to generate a placeholder image for your splash (exactly like how it does for the background/non-splash file).
-
-## ✨ Features
-### 20 new style presets! (yes TWENTY)
-> Warhammer and Lancer now have a default style!
-
-- all 20 new styles come with their own new splash and background animations, this means 40 impressive animation files have been added to the module. These have all been optimized for web with the average file size for these animations being ~ 300kb. This means you have several easy options for designing the look and feel of your Terminal. While still keeping asset load times snappy. I'm excited to mix and match all these new animations and share them with you today. 
-
-## Other Changes
-- made scan effect occur less frequently
-- custom and preset styles are given distinct background colors in both the tile config and style editor window
-- preset styles are hidden by default in style editor window
-- custom styles always show first
-- Terminal close prompt for GM, that said "This is a copy of what players would see". Can now be set to never show
-- made terminal sidebar buttons have a wider border on the horizontal sides
-- added a new style setting, for showing the ASCII art and loading bar. This used to be determined by if the splash file was a video or image. However, this now is its own configurable setting to allow for more control. 
-- added a script that runs behind the scenes to add missing style presets on startup. As well as adding properties that do not exist yet on style presets.
-- added a new image that can be chosen for quick tile background. In addition you can now check if you want a light to be placed to help players find the Terminal. Finally you can also pick a tint for the tile image right in this same window (talk about efficient, I know I will be using it!).
-
-## Upcoming
-> This has been a very time consuming process to make all these new styles but has been something I've wanted to do for several months. Now that this and also Region support is done. I will take a look at some of these other features I wanted to look at:
-
-- a type mode, where commands can be entered by keyboard
-- attempt to make a "book" or "paper" style so that DnD/Pathfinder folk can join the fun
-- ability for GM to run a lockdown macro, this stops users from using a Terminal and displays a timer
-
-# Version 3.1.5
-## 🐛 Bug Fix
-- Levels integration was broken, it seems since v11 or so there is a Levels API to use instead. Migrated to that and everything works. Thanks to anonymous for the bug report on that.
-  - this is the second time I've gotten really useful feedback from the in game feedback feature. Thank you guys for that ♥️
-
-## Upcoming
-- I have a boat load of fresh style presets that should drop this month. I will add presets for Warhammer, Lancer and new ones to Alien, Cyberpunk. As well as ones generic enough they can be used for any system.
-- Foundry devs are working on V13 and with that the tile config is being migrated to ApplicationV2. This will require some major code changes to support. I requested a prototype early but seems I'll have to wait for the public prototype. Which isn't really an issue. Last time, V12, it took several months for the prototype to become stable. Plenty of time for me to keep the migration smooth.
-
-# Version 3.1.4
-## 🐛 Bug Hotfix
-- fixed a MEJ conflict which would break all click listeners (this would have also created issues with several other modules, but MEJ is common). This was rooted in not using libwrapper when needed.
-
-# Version 3.1.3
-## ✨ New Features
-- teleporting a token from Region behavior is now supported
-
-# Version 3.1.2
-## 🐛 Bug Hotfix
-- fix issue with changing a region trigger
-
-# Version 3.1.1
-## 🐛 Bug Hotfix
-- fix issue with adding a region trigger 
-
-# Version 3.1.0
-- I explored integrating with Google Chrome's in browser LLM, Gemini Nano. To help GMs with writing journal entries. However, while the model is usable in the latest stable version of Chrome, it does have limitations (hardware and needs feature flags turned on). I'll probably check out a LLM integration feature using API keys some other time down the road.
-
-## 🗺️ Regions Integration
-- You can now trigger Region behaviors from the Terminal. A new UI button has been added to the tile config for this
-  - There are several important things to know for how to set this up. But I've listed those out in the UI, and should clear everything up
-## ✨ New Features
-- the "download map" feature now has an option to share to the whole group (which was the old behavior before Foundry V12)
-- Since Terminal 3.0.0 there is better support for cross scene usage. However, the default behavior should still be to close the Terminal when the scene changes. This is now true but there is now also a config to allow for the Terminal to <b>not</b> close when the scene changes
-
-# Version 3.0.1
-> still investigating a styling issue I observed on someone else's machine from a session I did. They had a 1920x1200 screen but I can't seen to replicate it with those dimensions. If anyone runs into styling issues where Terminal is unreadable please report it using the Feedback screen or Github issues tab with their screen size.
-
-## 🐛 Bugs squashed
-- several fixes for ASCII styling
-  - set the terminal content font to a more appropriate font
-  - fixed a long standing issue where the ASCII did not display the spacing correctly
-- added a script which will run on startup and update the default terminal styles if they have drifted
-- added some styling accommodations for small 720p height and below screens
-- fixed another long standing issue of the tile config having the incorrect height when opening (and shows a scrollbar)
-
-> I noticed tile config icons are not working on Blade Runner game system. This seems to be a bug with Blade Runner system. I opened a support [ticket](https://github.com/fvtt-fria-ligan/blade-runner-foundry-vtt/issues/52) to see if they are aware of it.
-
-# Version 3.0.0
-> more details can be read on the devlog [here](https://codabool.itch.io/terminal/devlog/786464/terminal-v30)
-
-### Major Config Migration
-> A new migration script will guide users through this automated process
-
-- migrate from IDs to UUIDs for Doors and SSH
-- migrate to using a tile flag instead of a global settings config for storing style associations
-
-### ✨ Other Changes
-- migrate to ApplicationV2 fully
-  - this has the major benefit of now giving a full stacktrace and line number when an uncaught error is thrown inside the Terminal Application
-- Major code changes, 18% reduction in the size of the codebase
-- Rename feature, can now rename certain aspects of the Terminal
-- quality of life changes:
-  - can see the new state of lights or doors when altering them. This changes the ASCII art and no longer uses ui notification toasts
-  - view buttons, Doors and SSH now have view buttons. These pan and ping on the placeable for easier configuration
+# Version 2.6.8
+- back port libwrapper fix for Foundry V11
 
 # Version 2.6.7
 - use different macro directory open method for Foundry V10
@@ -218,13 +39,13 @@ This is early but I am finding that the last version of Terminal is stable enoug
 
 # Version 2.6.4
 ### Development Update
-> I've started on a v3.0 for Terminal. This will only be supported on Foundry V12+. Going forward with that I actually won't provide any more feature updates for V10-V11 and will be working solely on V12. which actually allows me to remove a lot of old code. I had to rewrite the Terminal window fully to use Foundry's new AppV2. Doesn't necessarily add any benefits (it is certainly making debugging 100% better since I'm now given line numbers for stacktrace instead of "handlebars failed to render the template") but will be good for the longevity of the project. Foundry devs have mentioned that AppV1 will eventually go away. 
+> I've started on a v3.0 for Terminal. This will only be supported on Foundry V12+. Going forward with that I actually won't provide any more feature updates for V10-V11 and will be working solely on V12. which actually allows me to remove a lot of old code. I had to rewrite the Terminal window fully to use Foundry's new AppV2. Doesn't necessarily add any benefits (it is certainly making debugging 100% better since I'm now given line numbers for stacktrace instead of "handlebars failed to render the template") but will be good for the longevity of the project. Foundry devs have mentioned that AppV1 will eventually go away.
 
 > A commonly requested feature is customization of some hardcoded text, the v3.0 release will add that feature.
 
-> Additionally the v3.0 release will fully switch to using UUIDs instead of IDs. Since that is what Foundry V12 copies to your clipboard when you click on the ID now. Switching to using UUIDs is pretty interesting. This does require a rewrite for many things and I'm currently thinking will also require a migration script for users to run. Using UUID over tile ID is also the major blocker for having some features of Terminal only work on the scene of the Terminal's tile. Once I get a implementation that uses UUIDs and is stable you will be able to fully use a Terminal from another scene, and have it interact with things that are off scene! (i.e. Unlock a door that is in another scene). Many complications to solve before I want to release this though. 
+> Additionally the v3.0 release will fully switch to using UUIDs instead of IDs. Since that is what Foundry V12 copies to your clipboard when you click on the ID now. Switching to using UUIDs is pretty interesting. This does require a rewrite for many things and I'm currently thinking will also require a migration script for users to run. Using UUID over tile ID is also the major blocker for having some features of Terminal only work on the scene of the Terminal's tile. Once I get a implementation that uses UUIDs and is stable you will be able to fully use a Terminal from another scene, and have it interact with things that are off scene! (i.e. Unlock a door that is in another scene). Many complications to solve before I want to release this though.
 
-> as for the module, well I'll have more details soon. 
+> as for the module, well I'll have more details soon.
 
 - Support for `window-controls` module
 - fix a typo
@@ -234,9 +55,9 @@ This is early but I am finding that the last version of Terminal is stable enoug
 - Allow for Secure Shell button to have custom name
 
 ### Development Update
-> I have been hard at work for a new module. It has a lot of overhead and is taking a lot of time but that's just what it takes to make competitive modules on Foundry. There are a lot of talented devs out there. I did end up creating a whole website for this next project, which is done as of today. The website part is FOSS and you can see it on my GitHub. 
+> I have been hard at work for a new module. It has a lot of overhead and is taking a lot of time but that's just what it takes to make competitive modules on Foundry. There are a lot of talented devs out there. I did end up creating a whole website for this next project, which is done as of today. The website part is FOSS and you can see it on my GitHub.
 
-> as for the module, well I'll have more details soon. 
+> as for the module, well I'll have more details soon.
 
 # Version 2.6.2
 - fix an issue of the observe actor timer lock not being able to be removed, becuase it expects the GM to be on the source scene
@@ -285,7 +106,7 @@ This is early but I am finding that the last version of Terminal is stable enoug
 - can now set a splash video or image. If using a video, the ASCII and loading bar won't be displayed. Which effectively makes the video splash a full replacement for the standard ASCII loading screen. Warning, if using a video for both the splash and background. These files are not preloaded and you will see significant delay when your sever is not close to the client. For this reason the next update will include preload functionality which should greatly help any large network requests.
 - Detect Motion can now be limited to a specified range. This is very useful for Cyberpunk RED, which has rules that mention range based token detection.
 - There is now an option to only have the macro run once. This is useful for complex macros which you wouldn't want the players to run more than once.
-- Detect Motion and Observer Actor now have built in locks which only allow one to be running for a terminal. If the button is pressed a second time while one timer is still running, a message about that process already running will be displayed. This did introduce some risk in that if the GM reloads before the timer is removed this would permanently lock that timer with no easy way to remove it. For this reason I also implemented a safety mechanism. 15 seconds after a GM reloads Foundry it will remove all timer locks on all Terminals. 
+- Detect Motion and Observer Actor now have built in locks which only allow one to be running for a terminal. If the button is pressed a second time while one timer is still running, a message about that process already running will be displayed. This did introduce some risk in that if the GM reloads before the timer is removed this would permanently lock that timer with no easy way to remove it. For this reason I also implemented a safety mechanism. 15 seconds after a GM reloads Foundry it will remove all timer locks on all Terminals.
 
 ## Bugfix
 - only validate on tiles that the GM is currently on the scene for
@@ -414,7 +235,7 @@ This is early but I am finding that the last version of Terminal is stable enoug
 > I purchased the PDFs or modules associated with blade runner, warhammer IM, warhammer WG, cyberpunk, starfinder, lancer, shadowrun, fallout, star wars FFG.
 > This helped me design features which work generally. As well as targeted a feature specific to Starfinder and Alien.
 > In the future I could do further integrations. Top of the priority list right now is Cyberpunk RED.
-> They have a distinct rules around how a Terminal should be accessed. I hope to have a targeted update for Cyberpunk RED sometime this year. 
+> They have a distinct rules around how a Terminal should be accessed. I hope to have a targeted update for Cyberpunk RED sometime this year.
 
 ## ✨ Features
 - support PDFs
@@ -604,6 +425,6 @@ This is early but I am finding that the last version of Terminal is stable enoug
 
 # Version 1.0.0
 
-## 🌱 First release! 
+## 🌱 First release!
 
 > Checkout the storefront at [codabool.itch.io/terminal](https://codabool.itch.io/terminal)!

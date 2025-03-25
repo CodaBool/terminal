@@ -1,6 +1,6 @@
 # 🖥️ Terminal
 
-[![Static Badge](https://img.shields.io/badge/Itch.io-CodaBool-red?style=flat-square&logo=itchdotio)](https://codabool.itch.io) [![Static Badge](https://img.shields.io/badge/Discord-CodaBool-blue?style=flat-square&logo=discord)](https://discord.gg/foundryvtt) [![Static Badge](https://img.shields.io/badge/Foundry%20Verfied%20Version-12-brightgreen?style=flat-square&logo=checkmarx)](https://github.com/CodaBool/terminal/issues) [![Static Badge](https://img.shields.io/badge/Foundry%20Verfied%20Version-13-brightgreen?style=flat-square&logo=checkmarx)](https://github.com/CodaBool/terminal/issues)
+[![Static Badge](https://img.shields.io/badge/Itch.io-CodaBool-red?style=flat-square&logo=itchdotio)](https://codabool.itch.io) [![Static Badge](https://img.shields.io/badge/Discord-CodaBool-blue?style=flat-square&logo=discord)](https://discord.gg/foundryvtt) [![Static Badge](https://img.shields.io/badge/Foundry%20Verfied%20Version-11-brightgreen?style=flat-square&logo=checkmarx)](https://github.com/CodaBool/terminal/issues)
 
 ![Preview Video](https://raw.githubusercontent.com/CodaBool/terminal/main/img/preview.gif)
 
@@ -30,11 +30,14 @@ Several aspects of the terminal can be customized. You can set the background to
 Audio effects can also be customized. Specific files can be used for clicks, login, logout and as an ambient noise.
 
 ### ❤️ Compatibility
-The module has integration with other popular modules: `Levels`, `Puzzle Locks`, and `Monk's Active Tiles`.
+The module has integration with Levels, Puzzle Locks, and Monk's Active Tiles.
 
-There is also a Game System specific feature for Alien (charge items with a battery)
+There is also Game System specific features for Starfinder and Alien
 
 ### 🎈 Stretch Goals
-- add way to integrate with a spaceship. (e.g. starmap)
+- add way to integrate with a spaceship. (e.g. starmap, system controls)
 - Integrate with Cyberpunk RED rules
+- include a control dashboard where it can be locked down, wiped or given fake data
+- customize splash screen
+- more visual effects, such as filters and text animations
 - hacking / puzzle minigame
