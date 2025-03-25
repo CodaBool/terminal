@@ -13,31 +13,55 @@ Here you'll find the following:
 - Track [issues](https://github.com/CodaBool/terminal/issues)
 - Keep a [changelog](https://github.com/CodaBool/terminal/blob/main/changelog.md) of features
 
-# 🔑 Access
-> This is key based content. Meaning it will be a one time purchase, all future updates come free.
+# 🔎 Details
+If the player lacks permission to the Journal they will be given Observer. Upon leaving the tile they will be prompted to share the Journal with their party. If they do the Journal will become Observer for everyone.
 
-You can purchase a key to permanently tie to your Foundry accout at [codabool.itch.io/terminal](https://codabool.itch.io/terminal)
+This works as an alternative solution to map notes. I personally found map notes to be annoying in that they could be easily misconfigured with permissions or not even viewable when checked off from the control panel. This solves both those issues by handling permissions all automatically. 
 
-# 🔨 Usage
+# 📃 Usage
 1. Create a new tile
-2. Open the new tile's config by double clicking on it. There will be a new tab called `Terminal`
-3. Assign a `journal` to the Terminal and click the `enable` checkbox. There is no need to change the ownership, Terminal will handle permissions for you.
-4. Move onto the tile with any token
+2. link a journal to the tile and check "enabled" within the tile's new Terminal tab.
+3. walk onto the tile with any token. This will open Termainal's UI allowing for immersive Journals as well as other features described below.
 
-### 🎨 Customize
-Several aspects of the terminal can be customized. You can set the background to any image or video. You can define your own ASCII for the splash screen. You can define the colors for most things. You can set your own border image for the window.
+# ✨ Features
 
-Audio effects can also be customized. Specific files can be used for clicks, login, logout and as an ambient noise.
+After a GM enables a feature, a player can see and use it (usually from a new button) from within the styled Terminal GUI
 
-### ❤️ Compatibility
-The module has integration with Levels, Puzzle Locks, and Monk's Active Tiles.
+- lock & unlock doors
+- give players Observer on a token (camera feed access)
+- access other remote Terminals (even across scene)
+- require a item for access (keycard)
+- require a password for access
+- run a macro with arguments
+- clear fog of war for the scene (download a map)
+- detect motion within the scene (pings all tokens)
+- switch lights on or off
+- ALIEN RPG exclusive: charge items
+- Monk's Active Tiles: run triggers
+- encrypt journal pages, requiring a skill check to view
+- require skill checks any/all above features
+- simulate native Foundry Region events for unlimited possibilities
 
-There is also Game System specific features for Starfinder and Alien
+# 🎨 Stylize
+This module uses sound effects. All audio files can be swapped out easily. Here is a full list of things that can be customized:
 
-### 🎈 Stretch Goals
-- add way to integrate with a spaceship. (e.g. starmap, system controls)
-- Integrate with Cyberpunk RED rules
-- include a control dashboard where it can be locked down, wiped or given fake data
-- customize splash screen
-- more visual effects, such as filters and text animations
-- hacking / puzzle minigame
+- filters: noise, scan lines, text animations, glitch effect
+- colors: background, borders, text, buttons, loading bars
+- sound: ambient, startup, close, click
+- media: background, border image, splash screen
+- ASCII: a user defined text art is shown on Terminal startup, this can be edited
+
+# 🔑 Access
+
+There are two locations to purchase this module:
+
+- [itch.io](https://codabool.itch.io/terminal)
+- [foundryvtt.store](https://www.foundryvtt.store/products/terminal)
+
+Both methods will permanently add the module to your Foundry account. I'd recommend foundryvtt.store since with itch it requires the extra step of adding the purchased key to your Foundry account, for that follow Foundry's guide under "Content Key" to add the key.
+
+Since access is permanent, you receive all future updates for free
+
+# ❤️ Compatibility
+
+The module plays well with popular modules: [Levels](https://foundryvtt.com/packages/levels), [Puzzle Locks](https://foundryvtt.com/packages/puzzle-locks), and [Monk's Active Tiles](https://foundryvtt.com/packages/monks-active-tiles/)

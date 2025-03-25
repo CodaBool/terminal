@@ -1,7 +1,7 @@
 {
   "id": "terminal",
   "title": "Terminal",
-  "version": "2.6.8",
+  "version": "3.3.0",
   "url": "https://github.com/CodaBool/terminal",
   "bugs": "https://github.com/CodaBool/terminal/issues",
   "changelog": "https://github.com/CodaBool/terminal/blob/main/changelog.md",
@@ -26,11 +26,17 @@
     }
   ],
   "compatibility": {
-    "minimum": "10",
-    "verified": "12",
-    "maxium": "12"
+    "minimum": "13",
+    "verified": "13",
+    "maxium": "13"
   },
-  "esmodules": ["scripts/hooks.js", "scripts/ui.js", "scripts/util.js"],
+  "esmodules": [
+    "scripts/hooks.js",
+    "scripts/terminal.js",
+    "scripts/ui.js",
+    "scripts/util.js",
+    "scripts/presets.js"
+  ],
   "socket": true,
   "protected": true
 }
