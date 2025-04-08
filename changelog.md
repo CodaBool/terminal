@@ -38,6 +38,16 @@ This is early but I am finding that the last version of Terminal is stable enoug
 ## 😎 Code Trimmed
 - since this update doesn't support V12 anymore, I was able to remove plenty of lines of code. Which keeps the project maintainable.
 
+# Version 3.2.5
+## ✨ Feature
+- Beta testing Shadow Terminals. These allow anyone to watch a mirrored version of another user's Terminal.
+  - there are limitations for this feature. Namely no panning, cannot see the skilled / item required window. More details can be seen in the new Shadow window, accessible from the controls panel on the left.
+- new naming tags on the top of terminal windows. If a terminal opens as a "SHADOW" or a "SSH" it will have that displayed in the title
+- more detail in skill check confirm dialogs. For example previously if a player attempted to decrypt a page. It would inform the GM they are attempting to "decrypt a file". But will now say in addition the title of the page. A similar thing happens for most skill checks. Door checks say the name of the door if defined. Macro skill checks say the name of the macro. This can help the GM approve more accurately.
+
+# Version 3.2.4
+trying an empty version bump to solve 2.6.8 being the max version for Foundry v12
+
 # Version 3.2.3
 ## ✨ Quality of Life
 - Can add multiple Secure Shells to a single terminal now. 
