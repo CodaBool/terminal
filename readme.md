@@ -58,7 +58,7 @@ There are two locations to purchase this module:
 - [itch.io](https://codabool.itch.io/terminal)
 - [foundryvtt.store](https://www.foundryvtt.store/products/terminal)
 
-Both methods will permanently add the module to your Foundry account. I'd recommend foundryvtt.store since with itch it requires the extra step of adding the purchased key to your Foundry account, for that follow Foundry's guide under "Content Key" to add the key.
+Both methods will permanently add the module to your Foundry account. I'd recommend foundryvtt.store since with itch it requires the extra step of adding the purchased key to your Foundry account, for that follow [Foundry's guide](https://foundryvtt.com/article/premium-content/) under "Content Key" to add the key.
 
 Since access is permanent, you receive all future updates for free
 
