@@ -23,7 +23,7 @@
       *********************************     ()           ()
 </pre>
 # Version 3.3.1
-trying an empty version bump to solve 2.6.8 being the max version for Foundry v12
+- porting over features from 3.2.6 & 3.2.5. Namely Shadow & Observe actor fix
 
 # Version 3.3.0
 ## Deprecating V12
