@@ -38,6 +38,10 @@ This is early but I am finding that the last version of Terminal is stable enoug
 ## 😎 Code Trimmed
 - since this update doesn't support V12 anymore, I was able to remove plenty of lines of code. Which keeps the project maintainable.
 
+# Version 3.2.6
+## 🐛 Bugfix
+- observe actor was broken in a few ways. Fixed a few issues with it. (THANK YOU anonymous for the report!)
+
 # Version 3.2.5
 ## ✨ Feature
 - Beta testing Shadow Terminals. These allow anyone to watch a mirrored version of another user's Terminal.
