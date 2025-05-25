@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.3.2
+## 🐛 Bugfix
+- password and macro arguments were not editable in terminal config. Thank you @Macskay for the report
+
 # Version 3.3.1
 - porting over features from 3.2.6 & 3.2.5. Namely Shadow & Observe actor fix
 
