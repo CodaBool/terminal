@@ -22,6 +22,13 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.4.0
+## 🐛 Bugfix
+- fix a libwrapper issue, namely with item piles. But probably was affecting others too (Thank you @Siggysaw for the report ❤️)
+- removed 3 deprecated Foundry API calls with latest
+- removed teleport region behavior simulator because it is not working in V13 and it would be too difficult to continue support for it
+- fix a maximize bug where terminal would be stuck in a unusable small window
+
 # Version 3.3.2
 ## 🐛 Bugfix
 - password and macro arguments were not editable in terminal config. Thank you @Macskay for the report
