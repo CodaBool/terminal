@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.4.1
+- Foundry seems to have weird behavior API changes that I've only seen in 13.344. I'll just post a notice if that version is detected. Prompting to upgrade to 13.345 which no longer has the token movement API behavior change.
+
 # Version 3.4.0
 ## 🐛 Bugfix
 - fix a libwrapper issue, namely with item piles. But probably was affecting others too (Thank you @Siggysaw for the report ❤️)
