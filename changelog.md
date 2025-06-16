@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.4.2
+- Resolve new item-piles compatibility issues that showed up again (thank you both @x3dog & @Siggysaw for the report ❤️)
+
 # Version 3.4.1
 - Foundry seems to have weird behavior API changes that I've only seen in 13.344. I'll just post a notice if that version is detected. Prompting to upgrade to 13.345 which no longer has the token movement API behavior change.
 
