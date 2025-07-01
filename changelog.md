@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.4.3
+- added a checkbox for disabling sharing the terminal journal, for players
+- the tooltip for one config was getting clipped. This has been fixed, all tooltips have a consistent font size now too.
+
 # Version 3.4.2
 - Resolve new item-piles compatibility issues that showed up again (thank you both @x3dog & @Siggysaw for the report ❤️)
 
