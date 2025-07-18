@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.4.4
+- fixed tooltips being cutoff. Removed a related hacky workaround that did not even work.
+
 # Version 3.4.3
 - added a checkbox for disabling sharing the terminal journal, for players
 - the tooltip for one config was getting clipped. This has been fixed, all tooltips have a consistent font size now too.
