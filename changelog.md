@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.4.5
+- fixed a long standing issue of Terminal not properly resizing. This one was difficult to pin down because of how inconsistent it was. This was because it was a race condition. Should be resolved now. Another update soon to come.
+
 # Version 3.4.4
 - fixed tooltips being cutoff. Removed a related hacky workaround that did not even work.
 
