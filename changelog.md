@@ -22,8 +22,12 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 3.5.1
+- got a full coverage of features for CLI. But it's in a broken state. Fix coming soon.
+- Toggle lights now uses the scene from the parent tile is located. Previously it was just whatever scene the user was looking at.
+
 # Version 3.5.0
-- add beta CLI mode, limited functionality. CLI mode can be used to read pages in the journal. More feature coverage will be added in future updates. I'm busy working to get my next module out for a late October release. See https://codabool.itch.io/stargazer for more.
+- add beta CLI mode, limited functionality. CLI mode can be used to read pages in the journal. More feature coverage will be added in future updates. I'm busy working to get my next module out for a late October release. See [stargazer](https://codabool.itch.io/stargazer) for more.
 
 # Version 3.4.5
 - fixed a long standing issue of Terminal not properly resizing. This one was difficult to pin down because of how inconsistent it was. This was because it was a race condition. Should be resolved now. Another update soon to come.
