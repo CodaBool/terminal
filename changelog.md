@@ -22,6 +22,15 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.0
+- finished fully featured CLI mode. 
+  - there are still buttons which the user can press, this is a compromise for now. Ideally I would have users type `sudo` for skill checks. But that can be a future improvement.
+- major rewrite of how skill check text is added to Terminal. A better approach is used now which should in the long term have less issues.
+
+## 🐛 Bugfix
+- removed misfiring notification about region trigger linking
+- fixed a few issues with shadow terminals & SSH
+- due to the rewrite on skill check text there is no longer any issues with premature viewing of the success result before passing the check. 
 # Version 3.5.1
 - got a full coverage of features for CLI. But it's in a broken state. Fix coming soon.
 - Toggle lights now uses the scene from the parent tile is located. Previously it was just whatever scene the user was looking at.
