@@ -30,7 +30,7 @@ trying an empty version bump to solve 2.6.8 being the max version for Foundry v1
 This is early but I am finding that the last version of Terminal is stable enough. There were a few UI breaking changes that would have been time consuming to split on the two Foundry versions I was supporting. So, instead all future updates are going to be V13+ minimum. However, if a major bug crops up I'll put out a fix for V12. This unfortunately means The below features are locked behind upgrading to V13 😔
 
 > this gets said a thousand times over in the Foundry community but perform a backup of everything before upgrading to V13! Don't upgrade without giving yourself time to do a rollback if necessary.
-
+ 
 ## ✨ Feature
 - New config which disables Terminal if an encounter is happening
 - Can now run a macro as the triggering players, without a GM-proxy
