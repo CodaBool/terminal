@@ -16,7 +16,7 @@ Here you'll find the following:
 # 🔎 Details
 If the player lacks permission to the Journal they will be given Observer. Upon leaving the tile they will be prompted to share the Journal with their party. If they do the Journal will become Observer for everyone.
 
-This works as an alternative solution to map notes. I personally found map notes to be annoying in that they could be easily misconfigured with permissions or not even viewable when checked off from the control panel. This solves both those issues by handling permissions all automatically. 
+This works as an alternative solution to map notes. I personally found map notes to be annoying in that they could be easily misconfigured with permissions or not even viewable when checked off from the control panel. This solves both those issues by handling permissions all automatically. 
 
 # 📃 Usage
 1. Create a new tile
