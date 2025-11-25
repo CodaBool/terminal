@@ -84,6 +84,10 @@ This is early but I am finding that the last version of Terminal is stable enoug
 ## 😎 Code Trimmed
 - since this update doesn't support V12 anymore, I was able to remove plenty of lines of code. Which keeps the project maintainable.
 
+# Version 3.2.7
+## 🐛 Bugfix
+- some windows did not have scrollbars added to them
+
 # Version 3.2.6
 ## 🐛 Bugfix
 - observe actor was broken in a few ways. Fixed a few issues with it. (THANK YOU anonymous for the report!)
