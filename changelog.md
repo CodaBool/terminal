@@ -22,6 +22,13 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.4
+- fix darkness, detect motion, control actor
+- removed button for detach as it is too complicated for an initial v14 release
+
+# Version 4.0.3
+- add initial support for V14. Several features are still broken: window detach has bugs, darkness toggle, detect motion, control actor. This is just to add initial support. Fixes will come soon.
+
 # Version 4.0.1
 - add a scrollbar when needed
 
