@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.5
+- hotfix for v13, new changes broke Terminal
+
 # Version 4.0.4
 - fix darkness, detect motion, control actor
 - removed button for detach as it is too complicated for an initial v14 release
