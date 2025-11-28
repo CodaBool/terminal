@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.6
+- maintanaince changes, add more CLI flavor commands, remove warning for use on v14. Actually remove button that wasn't applied in 4.0.4
+
 # Version 4.0.5
 - hotfix for v13, new changes broke Terminal
 
