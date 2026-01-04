@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.7
+- make sure preset colors are read only. Users were able to bug presets by tweaking values they shouldn't be able to
+
 # Version 4.0.6
 - maintanaince changes, add more CLI flavor commands, remove warning for use on v14. Actually remove button that wasn't applied in 4.0.4
 
