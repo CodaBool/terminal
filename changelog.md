@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.8
+- fix an issue with token movement when on teleport movement
+
 # Version 4.0.7
 - make sure preset colors are read only. Users were able to bug presets by tweaking values they shouldn't be able to
 
