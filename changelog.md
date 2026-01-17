@@ -22,6 +22,10 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.9
+- add a button to help people learn the Terminal API
+- add a GM button to open Terminal for players without the need for tokens to move onto the tile
+
 # Version 4.0.8
 - fix an issue with token movement when on teleport movement
 
