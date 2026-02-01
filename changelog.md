@@ -22,6 +22,21 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.10
+- added teleport support back to region triggers! (was removed in v3.3.2 May 2025)
+  - there seems to be Foundry bugs when having multiple destinations
+- fix typos
+- fixed UI for Terminal API dialog
+- improve UI for "open terminal for select players"
+- add support for linking tiles from placeables tab
+- add support for linking doors from placeables tab
+  - Foundry seems to have doors bugged. The wall does not have the isDoor: true. They will fix this soon I'm sure
+- cleaned up some log lines that shouldn't have been there
+
+## 🐛 Bugs squashed
+- Region behaviors were broken, they are working again
+- fixed shadow terminal showing when it shouldn't have
+
 # Version 4.0.9
 - add a button to help people learn the Terminal API
 - add a GM button to open Terminal for players without the need for tokens to move onto the tile
