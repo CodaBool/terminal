@@ -22,6 +22,9 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.11
+- add support for custom fonts
+
 # Version 4.0.10
 - added teleport support back to region triggers! (was removed in v3.3.2 May 2025)
   - there seems to be Foundry bugs when having multiple destinations
