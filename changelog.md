@@ -22,6 +22,12 @@
      \________________________________\     ()   \o o/   ()
       *********************************     ()           ()
 </pre>
+# Version 4.0.13
+- fix bug where levels module was used when it was deprecated. THANK YOU anonymous for the report!
+
+# Version 4.0.12
+- levels support
+
 # Version 4.0.11
 - add support for custom fonts
 
